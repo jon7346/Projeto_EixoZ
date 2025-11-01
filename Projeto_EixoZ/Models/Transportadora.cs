@@ -8,6 +8,8 @@ namespace Projeto_EixoZ.Models
 {
     public class Transportadora
     {
+        public int IdTranportadora { get; set; }
+
         public string NomeFantasia { get; set; }
 
         public string MeioDeTransporte { get; set;  }
@@ -18,4 +20,5 @@ namespace Projeto_EixoZ.Models
 
 
     }
+    public class TransportadoraCollection : List<Transportadora> { }
 }

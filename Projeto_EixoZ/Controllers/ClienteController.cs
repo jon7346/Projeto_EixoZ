@@ -20,7 +20,7 @@ namespace Projeto_EixoZ.Controllers
             //Criando o comando SQL para inserir
             //um novo registro na tabela de clientes
             string query =
-                "INSERT INTO Cliente (Nome, Idade, Email, Senha, Endereco) " +
+                "INSERT INTO CLIENTE (Nome, Idade, Email, Senha, Endereco) " +
                 "VALUES (@Nome, @Idade, @Email, @Senha, @Endereco)";
 
             SqlCommand command = new SqlCommand(query);
@@ -41,7 +41,7 @@ namespace Projeto_EixoZ.Controllers
             //Criando o comando SQL para alterar
             //um registro na tabela de clientes
             string query =
-                "UPDATE Cliente SET " +
+                "UPDATE CLIENTE SET " +
                 "Nome = @Nome, " +
                 "Idade = @Idade, " +
                 "Email = @Email, " +
@@ -68,7 +68,7 @@ namespace Projeto_EixoZ.Controllers
             //Criando o comando SQL para excluir
             //um registro na tabela de clientes
             string query =
-                "DELETE FROM Cliente " +
+                "DELETE FROM CLIENTE " +
                 "WHERE IdCliente = @IdCliente";
             SqlCommand command = new SqlCommand(query);
             //Definindo os valores dos parametros
@@ -85,7 +85,7 @@ namespace Projeto_EixoZ.Controllers
             //um registro na tabela de clientes
             string query =
                 "SELECT * " +
-                "FROM Cliente " +
+                "FROM CLIENTE " +
                 "WHERE IdCliente = @IdCliente" +
                 "ORDER BY Nome";
             SqlCommand command = new SqlCommand(query);
@@ -123,13 +123,13 @@ namespace Projeto_EixoZ.Controllers
         {
             //Criando o comando SQL para selecionar
             //todos os registros na tabela de clientes
-            string query = "SELECT * FROM Cliente ";
+            string query = "SELECT * FROM CLIENTE ";
 
             //Validar se o filtro foi passado no parametro
             if (filtro != "")
                 query += "WHERE @filtro ";
 
-            query += "ORDER BY nome";
+            query += "ORDER BY Nome";
 
             SqlCommand command = new SqlCommand(query);
 
@@ -149,7 +149,7 @@ namespace Projeto_EixoZ.Controllers
                 //Todo dado precisa ser convertido
                 //do SQL Server para C#
                 cliente.ClienteId = (int)row["idCliente"];
-                cliente.Nome = (string)row["nome"];
+                cliente.Nome = (string)row["Nome"];
                 cliente.Idade = (int)row["Idade"];
                 cliente.Email = (string)row["email"];
                 cliente.Senha = (string)row["senha"];

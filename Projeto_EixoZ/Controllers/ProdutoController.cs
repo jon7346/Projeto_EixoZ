@@ -19,7 +19,7 @@ namespace Projeto_EixoZ.Controllers
             //Criando o comando SQL para inserir
             //um novo registro na tabela de clientes
             string query =
-                "INSERT INTO Produto (NomeProduto, Material, Peso, Tamanho, Preco) " +
+                "INSERT INTO PRODUTO (NomeProduto, Material, Peso, Tamanho, Preco) " +
                 "VALUES (@NomeProduto, @Material, @Peso, @Tamanho, @Preco)";
 
             SqlCommand command = new SqlCommand(query);
@@ -40,7 +40,7 @@ namespace Projeto_EixoZ.Controllers
             //Criando o comando SQL para alterar
             //um registro na tabela de clientes
             string query =
-                "UPDATE Produto SET " +
+                "UPDATE PRODUTO SET " +
                 "NomeProduto = @NomeProduto, " +
                 "Material = @Material, " +
                 "Peso = @Peso, " +
@@ -67,7 +67,7 @@ namespace Projeto_EixoZ.Controllers
             //Criando o comando SQL para excluir
             //um registro na tabela de clientes
             string query =
-                "DELETE FROM Produto " +
+                "DELETE FROM PRODUTO " +
                 "WHERE IdProduto = @IdProduto";
             SqlCommand command = new SqlCommand(query);
             //Definindo os valores dos parametros
@@ -84,9 +84,9 @@ namespace Projeto_EixoZ.Controllers
             //um registro na tabela de clientes
             string query =
                 "SELECT * " +
-                "FROM Produto " +
+                "FROM PRODUTO " +
                 "WHERE IdProduto = @IdProduto" +
-                "ORDER BY Nome";
+                "ORDER BY NomeProduto";
             SqlCommand command = new SqlCommand(query);
             //Definindo os valores dos parametros
             command.Parameters.AddWithValue("@IdProduto", produtoId);
@@ -97,19 +97,19 @@ namespace Projeto_EixoZ.Controllers
             if (dataTable.Rows.Count > 0)
             {
                 //Criando um novo objeto do tipo Produto
-                Produto Produto = new Produto();
+                Produto produto = new Produto();
                 // Agora vou indetificar o valor da linha na coluna
                 //e atribuir ao objeto
                 //Todo dado precisa ser convertido
                 //do SQL Server para C#
-                Produto.ClienteId = (int)dataTable.Rows[0]["IdProduto"];
-                Produto.Nome = (string)dataTable.Rows[0]["Nome"];
-                Produto.Idade = (int)dataTable.Rows[0]["Idade"];
-                Produto.Email = (string)dataTable.Rows[0]["Email"];
-                Produto.Senha = (string)dataTable.Rows[0]["Senha"];
-                Produto.Endereco = (string)dataTable.Rows[0]["Endereco"];
+                produto.IdProduto = (int)dataTable.Rows[0]["IdProduto"];
+                produto.NomeProduto = (string)dataTable.Rows[0]["NomeProduto"];
+                produto.Material = (string)dataTable.Rows[0]["Material"];
+                produto.Peso = (decimal)dataTable.Rows[0]["Peso"];
+                produto.Tamanho = (decimal)dataTable.Rows[0]["Tamanho"];
+                produto.Preco = (decimal)dataTable.Rows[0]["Preco"];
 
-                return Produto;
+                return produto;
             }
             else
                 return null;
@@ -122,13 +122,13 @@ namespace Projeto_EixoZ.Controllers
         {
             //Criando o comando SQL para selecionar
             //todos os registros na tabela de clientes
-            string query = "SELECT * FROM Produto ";
+            string query = "SELECT * FROM PRODUTO ";
 
             //Validar se o filtro foi passado no parametro
             if (filtro != "")
                 query += "WHERE @filtro ";
 
-            query += "ORDER BY nome";
+            query += "ORDER BY NomeProduto";
 
             SqlCommand command = new SqlCommand(query);
 
@@ -137,26 +137,26 @@ namespace Projeto_EixoZ.Controllers
             //em um objeto do tipo DataTable
             DataTable dataTable = dataBase.GetDataTable(command);
             //Criando um novo objeto do tipo ClienteColletion
-            ProdutoCollection clientes = new ProdutoCollection();
+            ProdutoCollection produtos = new ProdutoCollection();
             //Percorrendo todas as linhas retornadas no DataTable
             foreach (DataRow row in dataTable.Rows)
             {
                 //Criando um novo objeto do tipo Produto
-                Produto Produto = new Produto();
+                Produto produto = new Produto();
                 //Agora vou indetificar o valor da linha na coluna
                 //e atribuir ao objeto
                 //Todo dado precisa ser convertido
                 //do SQL Server para C#
-                Produto.ClienteId = (int)row["IdProduto"];
-                Produto.Nome = (string)row["nome"];
-                Produto.Idade = (int)row["Idade"];
-                Produto.Email = (string)row["email"];
-                Produto.Senha = (string)row["senha"];
-                Produto.Endereco = (string)row["Endereco"];
+                produto.IdProduto = (int)row["IdProduto"];
+                produto.NomeProduto = (string)row["NomeProduto"];
+                produto.Material = (string)row["Materual"];
+                produto.Peso = (decimal)row["Peso"];
+                produto.Tamanho = (decimal)row["Tamanho"];
+                produto.Preco = (decimal)row["Preco"];
                 //Adicionando o objeto Produto na coleção
-                clientes.Add(Produto);
+                produtos.Add(produto);
             }
-            return clientes;
+            return produtos;
         }
 
         //Método publico que retorna uma coleção de Clientes
@@ -170,13 +170,10 @@ namespace Projeto_EixoZ.Controllers
         //Onde é preciso definir o campo e o valor do filtro
         public ProdutoCollection GetByName(string value)
         {
-            return GetByFilter("Nome LIKE '%" + value + "%'");
+            return GetByFilter("NomeProduto LIKE '%" + value + "%'");
         }
 
-        //Método para consultar por email
-        public ProdutoCollection GetByEmail(string value)
-        {
-            return GetByFilter("Email = " + value);
-        }
+        
+
     }
 }

@@ -8,6 +8,7 @@ namespace Projeto_EixoZ.Models
 {
     public class Fornecedor
     {
+        public int IdFornecedor { get; set; }
         public string MateriaPrima { get; set; }
 
         public string NomeFantasia { get; set; }
@@ -19,4 +20,6 @@ namespace Projeto_EixoZ.Models
         public string Marca { get; set; }
 
     }
+
+    public class FornecedorCollection : List<Fornecedor> { }
 }
