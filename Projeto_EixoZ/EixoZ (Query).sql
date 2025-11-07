@@ -12,8 +12,6 @@
 		Rastrear pedidos:Rastreia o pedido ?
 */
 
-
-
 CREATE DATABASE EixoZ;
 GO
 USE EixoZ;
@@ -33,23 +31,49 @@ CREATE TABLE CLIENTE(
 	-- Endereço do mesmo 
 	Endereco Nvarchar(255) not null
 );
---Produtos disponíveis no catálogo 
-CREATE TABLE PRODUTO(
-	IdProduto int identity(1,1) primary key,
-	NomeProduto Nvarchar(255) not null,
-	Material Nvarchar(50) not null,
-	Peso decimal(10,2) not null,
-	Tamanho decimal(10,2) not null,
-	Preco Decimal(10,2) not null
+
+CREATE TABLE VENDEDOR(
+	--id do vendedor 
+	IdVendedor int identity(1,1) primary key,
+	--Nome do mesmo
+	Nome Nvarchar(255) not null,
+	-- Idade do mesmo 
+	Idade int not null,
+	-- email do vendedor 
+	Email Nvarchar(255) not null UNIQUE,
+	-- Senha do mesmo 
+	Senha Nvarchar(255) not null,
+	-- Endereço do mesmo 
+	Endereco Nvarchar(255) not null
 );
+
+CREATE TABLE PEDIDOS(
+    --id do pedido 
+	IdPedido int IDENTITY(1,1) PRIMARY KEY,
+	--id do cliente que realizou o pedido 
+    IdCliente int references CLIENTE(IdCliente),
+    -- id da transportadora que o entregará  
+	IdTransportadora int references TRANSPORTADORA(IdTransportadora),
+	-- id do vendedor que realizou a venda
+	IdVendedor int references VENDEDOR(IdVendedor) null,
+	-- endereço da entrega 
+    EnderecoEntrega Nvarchar(255) NOT NULL,
+	--data em que o pedido foi feito 
+    DataPedido DATETIME DEFAULT GETDATE(),
+    -- Qual o status do pedido 
+    StatusPedido NVARCHAR(50) NOT NULL DEFAULT 'Aguardando Pagamento',
+    --Observação (por que not null? ) 
+	Observacao Nvarchar(255) not null,
+);
+
 --Fornecedor de materias para confecção dos produtos
-CREATE TABLE FORNECEDOR(
+CREATE TABLE MATERIAL(
     --id fornecedor 
-	IdFornecedor int identity(1,1) primary key,
+	IdMaterial int identity(1,1) primary key,
 	-- Qual a materia prima que ele fornece(Somente uma por forcedor ou multiplas contas de fornecedores para varios máteriais ? )
 	MateriaPrima Nvarchar(255) not null,
 	--Nome da empresa pertencente ao fornedor ou melhor dizendo nome da empresa fornecedora 
-	NomeFantasia Nvarchar(255) not null,
+	NomeFornecedor Nvarchar(255) not null,
 	-- peso da máteria prima inclusa no pedido comprado por nós
 	PesoProduto Decimal(4,2) not null,
 	--Tipo da máteria prima ou descrição da mesma 
@@ -57,6 +81,7 @@ CREATE TABLE FORNECEDOR(
 	--Marca da máteria prima comprada
 	Marca Nvarchar(50) not null
 );
+
 --Empresa que realizará o tranporte das mercadorias 
 CREATE TABLE TRANSPORTADORA(
     -- id da transportadora 
@@ -71,37 +96,18 @@ CREATE TABLE TRANSPORTADORA(
 	Observacao Nvarchar(255) 
 );
 -- Onde serão armazenados os Pedidos 
-CREATE TABLE PEDIDOS(
-    --id do pedido 
-	IdPedido int IDENTITY(1,1) PRIMARY KEY,
-	--id do cliente que realizou o pedido 
-    IdCliente int NOT NULL,
-    -- id da transportadora que o entregará  
-	IdTransportadora int not null,
-	-- endereço da entrega 
-    EnderecoEntrega Nvarchar(255) NOT NULL,
-	--data em que o pedido foi feito 
-    DataPedido DATETIME DEFAULT GETDATE(),
-    -- Qual o status do pedido 
-    StatusPedido NVARCHAR(50) NOT NULL DEFAULT 'Aguardando Pagamento',
-    --Observação (por que not null? ) 
-	Observacao Nvarchar(255) not null,
-	FOREIGN KEY (IdCliente) REFERENCES CLIENTE(IdCliente),
-	FOREIGN KEY (IdTransportadora) REFERENCES TRANSPORTADORA(IdTransportadora)
-);
+
 -- Solução para multiplos produtos em um unico PEDIDO, relação N para N de PRODUTOS com PEDIDOS 
 CREATE TABLE ITENS_PEDIDOS(
    --id do itens pedido 
     IdItemPedido INT IDENTITY(1,1) PRIMARY KEY,
 	--id do pedido o qual os itens pertencem 
-    IdPedido INT NOT NULL,
+    IdPedido INT references PEDIDOS(IdPedido),
 	--id do produto 
-    IdProduto INT NOT NULL,
+    IdMaterial INT references MATERIAL(IdMaterial),
 	-- quantidade do produto 
     Quantidade INT NOT NULL,
 	--Preço unitário utilizado para a venda ou preço final 
     PrecoUnitarioVenda DECIMAL(10,2) ,
-    FOREIGN KEY (IdPedido) REFERENCES PEDIDOS(IdPedido),
-    FOREIGN KEY (IdProduto) REFERENCES PRODUTO(IdProduto)
 );
 GO
