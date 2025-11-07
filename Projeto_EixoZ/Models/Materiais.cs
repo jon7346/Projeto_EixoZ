@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Projeto_EixoZ.Models
 {
-    public class Fornecedor
+    public class Materiais
     {
-        public int IdFornecedor { get; set; }
+        public int IdMaterial { get; set; }
         public string MateriaPrima { get; set; }
 
-        public string NomeFantasia { get; set; }
+        public string NomeFornecedor { get; set; }
 
         public decimal PesoProduto { get; set; }
 
@@ -21,5 +21,5 @@ namespace Projeto_EixoZ.Models
 
     }
 
-    public class FornecedorCollection : List<Fornecedor> { }
+    public class MateriaisCollection : List<Materiais> { }
 }
