@@ -7,23 +7,23 @@
       "RelativeMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|solutionrelative:eixoz (query).sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|c:\\github\\c#\\mvc-poo\\projeto_eixoz\\projeto_eixoz\\views\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|C:\\GitHub\\C#\\MVC-POO\\Projeto_EixoZ\\Projeto_EixoZ\\views\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|solutionrelative:views\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|c:\\github\\c#\\mvc-poo\\projeto_eixoz\\projeto_eixoz\\views\\frmcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|C:\\GitHub\\C#\\MVC-POO\\Projeto_EixoZ\\Projeto_EixoZ\\views\\frmcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|solutionrelative:views\\frmcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|c:\\github\\c#\\mvc-poo\\projeto_eixoz\\projeto_eixoz\\views\\frmcadproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|C:\\GitHub\\C#\\MVC-POO\\Projeto_EixoZ\\Projeto_EixoZ\\views\\frmcadproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|solutionrelative:views\\frmcadproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|c:\\github\\c#\\mvc-poo\\projeto_eixoz\\projeto_eixoz\\views\\frmcadastrocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|C:\\GitHub\\C#\\MVC-POO\\Projeto_EixoZ\\Projeto_EixoZ\\views\\frmcadastrocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|solutionrelative:views\\frmcadastrocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|c:\\github\\c#\\mvc-poo\\projeto_eixoz\\projeto_eixoz\\views\\frmproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|C:\\GitHub\\C#\\MVC-POO\\Projeto_EixoZ\\Projeto_EixoZ\\views\\frmproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|solutionrelative:views\\frmproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -65,8 +65,7 @@
               "ToolTip": "C:\\GitHub\\C#\\MVC-POO\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmPrincipal.cs [Design]",
               "RelativeToolTip": "Views\\frmPrincipal.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T00:36:47.676Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-11-07T00:36:47.676Z"
             },
             {
               "$type": "Document",
@@ -89,8 +88,7 @@
               "ToolTip": "C:\\GitHub\\C#\\MVC-POO\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmProduto.cs [Design]",
               "RelativeToolTip": "Views\\frmProduto.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T00:08:50.947Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-11-07T00:08:50.947Z"
             },
             {
               "$type": "Document",
@@ -101,8 +99,7 @@
               "ToolTip": "C:\\GitHub\\C#\\MVC-POO\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmCliente.cs [Design]",
               "RelativeToolTip": "Views\\frmCliente.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T00:08:48.985Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-11-07T00:08:48.985Z"
             },
             {
               "$type": "Document",
@@ -113,8 +110,7 @@
               "ToolTip": "C:\\GitHub\\C#\\MVC-POO\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmCadProduto.cs [Design]",
               "RelativeToolTip": "Views\\frmCadProduto.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T00:08:47.774Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-11-07T00:08:47.774Z"
             },
             {
               "$type": "Document",
@@ -125,8 +121,7 @@
               "ToolTip": "C:\\GitHub\\C#\\MVC-POO\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmCadastroCliente.cs [Design]",
               "RelativeToolTip": "Views\\frmCadastroCliente.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T00:08:46.789Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-11-07T00:08:46.789Z"
             }
           ]
         }
