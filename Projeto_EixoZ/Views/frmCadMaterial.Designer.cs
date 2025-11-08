@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadMaterial));
-            this.txtTmoCadProd = new System.Windows.Forms.TextBox();
-            this.txtPrecoCadProd = new System.Windows.Forms.TextBox();
-            this.txtPesoCadProd = new System.Windows.Forms.TextBox();
-            this.txtMtlCadProd = new System.Windows.Forms.TextBox();
-            this.txtNomeCadProd = new System.Windows.Forms.TextBox();
-            this.txtIDCadProd = new System.Windows.Forms.TextBox();
+            this.txtTmoCadMaterial = new System.Windows.Forms.TextBox();
+            this.txtPrecoCadMaterial = new System.Windows.Forms.TextBox();
+            this.txtPesoCadMaterial = new System.Windows.Forms.TextBox();
+            this.txtMtlCadMaterial = new System.Windows.Forms.TextBox();
+            this.txtNomeCadMaterial = new System.Windows.Forms.TextBox();
+            this.txtIDCadMaterial = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -45,47 +45,47 @@
             this.btnClrCadProd = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // txtTmoCadProd
+            // txtTmoCadMaterial
             // 
-            this.txtTmoCadProd.Location = new System.Drawing.Point(15, 406);
-            this.txtTmoCadProd.Name = "txtTmoCadProd";
-            this.txtTmoCadProd.Size = new System.Drawing.Size(136, 22);
-            this.txtTmoCadProd.TabIndex = 23;
+            this.txtTmoCadMaterial.Location = new System.Drawing.Point(15, 406);
+            this.txtTmoCadMaterial.Name = "txtTmoCadMaterial";
+            this.txtTmoCadMaterial.Size = new System.Drawing.Size(136, 22);
+            this.txtTmoCadMaterial.TabIndex = 23;
             // 
-            // txtPrecoCadProd
+            // txtPrecoCadMaterial
             // 
-            this.txtPrecoCadProd.Location = new System.Drawing.Point(15, 324);
-            this.txtPrecoCadProd.Name = "txtPrecoCadProd";
-            this.txtPrecoCadProd.Size = new System.Drawing.Size(136, 22);
-            this.txtPrecoCadProd.TabIndex = 22;
+            this.txtPrecoCadMaterial.Location = new System.Drawing.Point(15, 324);
+            this.txtPrecoCadMaterial.Name = "txtPrecoCadMaterial";
+            this.txtPrecoCadMaterial.Size = new System.Drawing.Size(136, 22);
+            this.txtPrecoCadMaterial.TabIndex = 22;
             // 
-            // txtPesoCadProd
+            // txtPesoCadMaterial
             // 
-            this.txtPesoCadProd.Location = new System.Drawing.Point(15, 181);
-            this.txtPesoCadProd.Name = "txtPesoCadProd";
-            this.txtPesoCadProd.Size = new System.Drawing.Size(136, 22);
-            this.txtPesoCadProd.TabIndex = 21;
+            this.txtPesoCadMaterial.Location = new System.Drawing.Point(15, 181);
+            this.txtPesoCadMaterial.Name = "txtPesoCadMaterial";
+            this.txtPesoCadMaterial.Size = new System.Drawing.Size(136, 22);
+            this.txtPesoCadMaterial.TabIndex = 21;
             // 
-            // txtMtlCadProd
+            // txtMtlCadMaterial
             // 
-            this.txtMtlCadProd.Location = new System.Drawing.Point(15, 132);
-            this.txtMtlCadProd.Name = "txtMtlCadProd";
-            this.txtMtlCadProd.Size = new System.Drawing.Size(136, 22);
-            this.txtMtlCadProd.TabIndex = 20;
+            this.txtMtlCadMaterial.Location = new System.Drawing.Point(15, 132);
+            this.txtMtlCadMaterial.Name = "txtMtlCadMaterial";
+            this.txtMtlCadMaterial.Size = new System.Drawing.Size(136, 22);
+            this.txtMtlCadMaterial.TabIndex = 20;
             // 
-            // txtNomeCadProd
+            // txtNomeCadMaterial
             // 
-            this.txtNomeCadProd.Location = new System.Drawing.Point(12, 88);
-            this.txtNomeCadProd.Name = "txtNomeCadProd";
-            this.txtNomeCadProd.Size = new System.Drawing.Size(136, 22);
-            this.txtNomeCadProd.TabIndex = 19;
+            this.txtNomeCadMaterial.Location = new System.Drawing.Point(12, 88);
+            this.txtNomeCadMaterial.Name = "txtNomeCadMaterial";
+            this.txtNomeCadMaterial.Size = new System.Drawing.Size(136, 22);
+            this.txtNomeCadMaterial.TabIndex = 19;
             // 
-            // txtIDCadProd
+            // txtIDCadMaterial
             // 
-            this.txtIDCadProd.Location = new System.Drawing.Point(12, 44);
-            this.txtIDCadProd.Name = "txtIDCadProd";
-            this.txtIDCadProd.Size = new System.Drawing.Size(136, 22);
-            this.txtIDCadProd.TabIndex = 18;
+            this.txtIDCadMaterial.Location = new System.Drawing.Point(12, 44);
+            this.txtIDCadMaterial.Name = "txtIDCadMaterial";
+            this.txtIDCadMaterial.Size = new System.Drawing.Size(136, 22);
+            this.txtIDCadMaterial.TabIndex = 18;
             // 
             // label6
             // 
@@ -166,12 +166,12 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnClrCadProd);
             this.Controls.Add(this.btnSalvarCadProd);
-            this.Controls.Add(this.txtTmoCadProd);
-            this.Controls.Add(this.txtPrecoCadProd);
-            this.Controls.Add(this.txtPesoCadProd);
-            this.Controls.Add(this.txtMtlCadProd);
-            this.Controls.Add(this.txtNomeCadProd);
-            this.Controls.Add(this.txtIDCadProd);
+            this.Controls.Add(this.txtTmoCadMaterial);
+            this.Controls.Add(this.txtPrecoCadMaterial);
+            this.Controls.Add(this.txtPesoCadMaterial);
+            this.Controls.Add(this.txtMtlCadMaterial);
+            this.Controls.Add(this.txtNomeCadMaterial);
+            this.Controls.Add(this.txtIDCadMaterial);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -188,12 +188,12 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtTmoCadProd;
-        private System.Windows.Forms.TextBox txtPrecoCadProd;
-        private System.Windows.Forms.TextBox txtPesoCadProd;
-        private System.Windows.Forms.TextBox txtMtlCadProd;
-        private System.Windows.Forms.TextBox txtNomeCadProd;
-        private System.Windows.Forms.TextBox txtIDCadProd;
+        private System.Windows.Forms.TextBox txtTmoCadMaterial;
+        private System.Windows.Forms.TextBox txtPrecoCadMaterial;
+        private System.Windows.Forms.TextBox txtPesoCadMaterial;
+        private System.Windows.Forms.TextBox txtMtlCadMaterial;
+        private System.Windows.Forms.TextBox txtNomeCadMaterial;
+        private System.Windows.Forms.TextBox txtIDCadMaterial;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;

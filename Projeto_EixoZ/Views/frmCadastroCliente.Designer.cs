@@ -35,14 +35,14 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtID = new System.Windows.Forms.TextBox();
-            this.txtNome = new System.Windows.Forms.TextBox();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.txtSenha = new System.Windows.Forms.TextBox();
-            this.txtEndereco = new System.Windows.Forms.TextBox();
-            this.txtIdade = new System.Windows.Forms.TextBox();
-            this.btnSalvar = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
+            this.txtIDCadCliente = new System.Windows.Forms.TextBox();
+            this.txtNomeCadCliente = new System.Windows.Forms.TextBox();
+            this.txtEmailCadCliente = new System.Windows.Forms.TextBox();
+            this.txtSenhaCadCliente = new System.Windows.Forms.TextBox();
+            this.txtEnderecoCadCliente = new System.Windows.Forms.TextBox();
+            this.txtIdadeCadCliente = new System.Windows.Forms.TextBox();
+            this.btnSalvarCadCliente = new System.Windows.Forms.Button();
+            this.btnCancelarCadCliente = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -99,79 +99,79 @@
             this.label6.TabIndex = 5;
             this.label6.Text = "Idade:";
             // 
-            // txtID
+            // txtIDCadCliente
             // 
-            this.txtID.Location = new System.Drawing.Point(11, 32);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(180, 22);
-            this.txtID.TabIndex = 6;
+            this.txtIDCadCliente.Location = new System.Drawing.Point(11, 32);
+            this.txtIDCadCliente.Name = "txtIDCadCliente";
+            this.txtIDCadCliente.Size = new System.Drawing.Size(180, 22);
+            this.txtIDCadCliente.TabIndex = 6;
             // 
-            // txtNome
+            // txtNomeCadCliente
             // 
-            this.txtNome.Location = new System.Drawing.Point(15, 93);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(237, 22);
-            this.txtNome.TabIndex = 7;
+            this.txtNomeCadCliente.Location = new System.Drawing.Point(15, 93);
+            this.txtNomeCadCliente.Name = "txtNomeCadCliente";
+            this.txtNomeCadCliente.Size = new System.Drawing.Size(237, 22);
+            this.txtNomeCadCliente.TabIndex = 7;
             // 
-            // txtEmail
+            // txtEmailCadCliente
             // 
-            this.txtEmail.Location = new System.Drawing.Point(15, 160);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(237, 22);
-            this.txtEmail.TabIndex = 8;
+            this.txtEmailCadCliente.Location = new System.Drawing.Point(15, 160);
+            this.txtEmailCadCliente.Name = "txtEmailCadCliente";
+            this.txtEmailCadCliente.Size = new System.Drawing.Size(237, 22);
+            this.txtEmailCadCliente.TabIndex = 8;
             // 
-            // txtSenha
+            // txtSenhaCadCliente
             // 
-            this.txtSenha.Location = new System.Drawing.Point(15, 244);
-            this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(237, 22);
-            this.txtSenha.TabIndex = 9;
+            this.txtSenhaCadCliente.Location = new System.Drawing.Point(15, 244);
+            this.txtSenhaCadCliente.Name = "txtSenhaCadCliente";
+            this.txtSenhaCadCliente.Size = new System.Drawing.Size(237, 22);
+            this.txtSenhaCadCliente.TabIndex = 9;
             // 
-            // txtEndereco
+            // txtEnderecoCadCliente
             // 
-            this.txtEndereco.Location = new System.Drawing.Point(15, 311);
-            this.txtEndereco.Name = "txtEndereco";
-            this.txtEndereco.Size = new System.Drawing.Size(237, 22);
-            this.txtEndereco.TabIndex = 10;
+            this.txtEnderecoCadCliente.Location = new System.Drawing.Point(15, 311);
+            this.txtEnderecoCadCliente.Name = "txtEnderecoCadCliente";
+            this.txtEnderecoCadCliente.Size = new System.Drawing.Size(237, 22);
+            this.txtEnderecoCadCliente.TabIndex = 10;
             // 
-            // txtIdade
+            // txtIdadeCadCliente
             // 
-            this.txtIdade.Location = new System.Drawing.Point(11, 378);
-            this.txtIdade.Name = "txtIdade";
-            this.txtIdade.Size = new System.Drawing.Size(237, 22);
-            this.txtIdade.TabIndex = 11;
+            this.txtIdadeCadCliente.Location = new System.Drawing.Point(11, 378);
+            this.txtIdadeCadCliente.Name = "txtIdadeCadCliente";
+            this.txtIdadeCadCliente.Size = new System.Drawing.Size(237, 22);
+            this.txtIdadeCadCliente.TabIndex = 11;
             // 
-            // btnSalvar
+            // btnSalvarCadCliente
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(381, 69);
-            this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(129, 34);
-            this.btnSalvar.TabIndex = 12;
-            this.btnSalvar.Text = "Salvar";
-            this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvarCadCliente.Location = new System.Drawing.Point(381, 69);
+            this.btnSalvarCadCliente.Name = "btnSalvarCadCliente";
+            this.btnSalvarCadCliente.Size = new System.Drawing.Size(129, 34);
+            this.btnSalvarCadCliente.TabIndex = 12;
+            this.btnSalvarCadCliente.Text = "Salvar";
+            this.btnSalvarCadCliente.UseVisualStyleBackColor = true;
             // 
-            // btnCancelar
+            // btnCancelarCadCliente
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(381, 160);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(129, 34);
-            this.btnCancelar.TabIndex = 13;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelarCadCliente.Location = new System.Drawing.Point(381, 160);
+            this.btnCancelarCadCliente.Name = "btnCancelarCadCliente";
+            this.btnCancelarCadCliente.Size = new System.Drawing.Size(129, 34);
+            this.btnCancelarCadCliente.TabIndex = 13;
+            this.btnCancelarCadCliente.Text = "Cancelar";
+            this.btnCancelarCadCliente.UseVisualStyleBackColor = true;
             // 
             // frmCadastroCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.btnSalvar);
-            this.Controls.Add(this.txtIdade);
-            this.Controls.Add(this.txtEndereco);
-            this.Controls.Add(this.txtSenha);
-            this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.txtNome);
-            this.Controls.Add(this.txtID);
+            this.Controls.Add(this.btnCancelarCadCliente);
+            this.Controls.Add(this.btnSalvarCadCliente);
+            this.Controls.Add(this.txtIdadeCadCliente);
+            this.Controls.Add(this.txtEnderecoCadCliente);
+            this.Controls.Add(this.txtSenhaCadCliente);
+            this.Controls.Add(this.txtEmailCadCliente);
+            this.Controls.Add(this.txtNomeCadCliente);
+            this.Controls.Add(this.txtIDCadCliente);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -194,13 +194,13 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtID;
-        private System.Windows.Forms.TextBox txtNome;
-        private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.TextBox txtSenha;
-        private System.Windows.Forms.TextBox txtEndereco;
-        private System.Windows.Forms.TextBox txtIdade;
-        private System.Windows.Forms.Button btnSalvar;
-        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.TextBox txtIDCadCliente;
+        private System.Windows.Forms.TextBox txtNomeCadCliente;
+        private System.Windows.Forms.TextBox txtEmailCadCliente;
+        private System.Windows.Forms.TextBox txtSenhaCadCliente;
+        private System.Windows.Forms.TextBox txtEnderecoCadCliente;
+        private System.Windows.Forms.TextBox txtIdadeCadCliente;
+        private System.Windows.Forms.Button btnSalvarCadCliente;
+        private System.Windows.Forms.Button btnCancelarCadCliente;
     }
 }

@@ -73,6 +73,24 @@
     <Compile Include="Views\frmCadMaterial.Designer.cs">
       <DependentUpon>frmCadMaterial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\frmCadPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmCadPedidos.Designer.cs">
+      <DependentUpon>frmCadPedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmCadTransportadora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmCadTransportadora.Designer.cs">
+      <DependentUpon>frmCadTransportadora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmCadVendedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmCadVendedor.Designer.cs">
+      <DependentUpon>frmCadVendedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\frmVisualizaçãoCoringa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +123,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmCadMaterial.resx">
       <DependentUpon>frmCadMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmCadPedidos.resx">
+      <DependentUpon>frmCadPedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmCadTransportadora.resx">
+      <DependentUpon>frmCadTransportadora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmCadVendedor.resx">
+      <DependentUpon>frmCadVendedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmVisualizaçãoCoringa.resx">
       <DependentUpon>frmVisualizaçãoCoringa.cs</DependentUpon>

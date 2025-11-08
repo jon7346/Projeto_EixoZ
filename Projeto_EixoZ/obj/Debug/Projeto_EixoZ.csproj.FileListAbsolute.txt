@@ -1,0 +1,12 @@
+C:\RepositórioGitHub\Projeto_EixoZ\Projeto_EixoZ\obj\Debug\Projeto_EixoZ.csproj.AssemblyReference.cache
+C:\RepositórioGitHub\Projeto_EixoZ\Projeto_EixoZ\obj\Debug\Projeto_EixoZ.Properties.Resources.resources
+C:\RepositórioGitHub\Projeto_EixoZ\Projeto_EixoZ\obj\Debug\Projeto_EixoZ.Views.frmCadastroCliente.resources
+C:\RepositórioGitHub\Projeto_EixoZ\Projeto_EixoZ\obj\Debug\Projeto_EixoZ.Views.frmCadMaterial.resources
+C:\RepositórioGitHub\Projeto_EixoZ\Projeto_EixoZ\obj\Debug\Projeto_EixoZ.Views.frmCadPedidos.resources
+C:\RepositórioGitHub\Projeto_EixoZ\Projeto_EixoZ\obj\Debug\Projeto_EixoZ.Views.frmCadTransportadora.resources
+C:\RepositórioGitHub\Projeto_EixoZ\Projeto_EixoZ\obj\Debug\Projeto_EixoZ.Views.frmCadVendedor.resources
+C:\RepositórioGitHub\Projeto_EixoZ\Projeto_EixoZ\obj\Debug\Projeto_EixoZ.Views.frmVisualizaçãoCoringa.resources
+C:\RepositórioGitHub\Projeto_EixoZ\Projeto_EixoZ\obj\Debug\Projeto_EixoZ.Views.frmPrincipal.resources
+C:\RepositórioGitHub\Projeto_EixoZ\Projeto_EixoZ\obj\Debug\Projeto_EixoZ.Views.frmMaterial.resources
+C:\RepositórioGitHub\Projeto_EixoZ\Projeto_EixoZ\obj\Debug\Projeto_EixoZ.csproj.GenerateResource.cache
+C:\RepositórioGitHub\Projeto_EixoZ\Projeto_EixoZ\obj\Debug\Projeto_EixoZ.csproj.CoreCompileInputs.cache
