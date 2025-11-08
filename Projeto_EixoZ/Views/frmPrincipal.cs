@@ -16,5 +16,11 @@ namespace Projeto_EixoZ.Views
         {
             InitializeComponent();
         }
+
+        private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCliente telaCLI = new frmCliente();
+            telaCLI.ShowDialog();
+        }
     }
 }

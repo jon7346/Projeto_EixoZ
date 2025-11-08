@@ -171,10 +171,31 @@ namespace Projeto_EixoZ.Controllers
             //Método para consultar po nome
             //Aplicando o filtro diretamente no método
             //Onde é preciso definir o campo e o valor do filtro
-            public MateriaisCollection GetByName(string value)
+            public MateriaisCollection GetByFornecedor(string value)
             {
                 return GetByFilter("NomeFornecedor LIKE '%" + value + "%'");
             }
+            public MateriaisCollection GetByMateria(string value)
+            {
+                return GetByFilter("MateriaPrima LIKE '%" + value + "%'");
+            }
+            public MateriaisCollection GetByPeso(string value)
+            {
+                return GetByFilter("PesoProduto LIKE '%" + value + "%'");
+            }
+
+            public MateriaisCollection GetByTipo(string value)
+            {
+                return GetByFilter("Tipo LIKE '%" + value + "%'");
+            }
+            public MateriaisCollection GetByMarca(string value)
+            {
+                return GetByFilter("Marca LIKE '%" + value + "%'");
+            }
+
+
+
+
 
     }
 }

@@ -178,5 +178,15 @@ namespace Projeto_EixoZ.Controllers
         {
             return GetByFilter("Email = " + value);
         }
+        public VendedorCollection GetByEndereco(string value)
+        {
+            return GetByFilter("Endereco LIKE '%" + value + "%'");
+        }
+        public VendedorCollection GetByIdade(string value)
+        {
+            return GetByFilter("Idade LIKE '%" + value + "%'");
+        }
+
+
     }
 }

@@ -61,6 +61,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\DataBaseServices.cs" />
+    <Compile Include="Views\frmPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmPedidos.Designer.cs">
+      <DependentUpon>frmPedidos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\frmCadastroCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +96,24 @@
     </Compile>
     <Compile Include="Views\frmCadVendedor.Designer.cs">
       <DependentUpon>frmCadVendedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmCliente.Designer.cs">
+      <DependentUpon>frmCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FrmTransportadora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmTransportadora.Designer.cs">
+      <DependentUpon>FrmTransportadora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmVendedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmVendedor.Designer.cs">
+      <DependentUpon>frmVendedor.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\frmVisualizaçãoCoringa.cs">
       <SubType>Form</SubType>
@@ -133,6 +157,18 @@
     <EmbeddedResource Include="Views\frmCadVendedor.resx">
       <DependentUpon>frmCadVendedor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmCliente.resx">
+      <DependentUpon>frmCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmPedidos.resx">
+      <DependentUpon>frmPedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrmTransportadora.resx">
+      <DependentUpon>FrmTransportadora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmVendedor.resx">
+      <DependentUpon>frmVendedor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\frmVisualizaçãoCoringa.resx">
       <DependentUpon>frmVisualizaçãoCoringa.cs</DependentUpon>
     </EmbeddedResource>
@@ -142,6 +178,8 @@
     <EmbeddedResource Include="Views\frmMaterial.resx">
       <DependentUpon>frmMaterial.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Properties\DataSources\Projeto_EixoZ.Models.Cliente.datasource" />
+    <None Include="Properties\DataSources\Projeto_EixoZ.Models.ClienteCollection.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

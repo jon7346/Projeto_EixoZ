@@ -39,6 +39,7 @@ CREATE TABLE CLIENTE(
 	-- Endereço do mesmo 
 	Endereco Nvarchar(255) not null
 );
+go
 
 CREATE TABLE VENDEDOR(
 	--id do vendedor 
@@ -54,6 +55,37 @@ CREATE TABLE VENDEDOR(
 	-- Endereço do mesmo 
 	Endereco Nvarchar(255) not null
 );
+go 
+-- materias para confecção dos produtos
+CREATE TABLE MATERIAL(
+    --id do material 
+	IdMaterial int identity(1,1) primary key,
+	--MateriaPrima
+	MateriaPrima Nvarchar(255) not null,
+	--Nome do fornecedor do material 
+	NomeFornecedor Nvarchar(255) not null,
+	-- peso do material 
+	PesoProduto Decimal(4,2) not null,
+	-- tipo do material 
+	Tipo Nvarchar(50) not null,
+	-- marca do material 
+	Marca Nvarchar(50) not null
+);
+go
+--Empresa que realizará o tranporte das mercadorias 
+CREATE TABLE TRANSPORTADORA(
+    -- id da transportadora 
+	IdTransportadora int identity(1,1) primary key,
+	--Nome da empresa pertencente ao Transportador ou melhor dizendo nome da empresa transportadora  
+	NomeFantasia Nvarchar(255) not null,
+	--Meio pelo qual a empresa costuma fazer o transporte 
+	MeioDeTransporte Nvarchar(255) not null,
+	-- preço pelo qual somos cobrados em média pelas transportadoras 
+	PrecoMedio Decimal(10,2) not null,
+	--observações 
+	Observacao Nvarchar(255) 
+);
+go
 
 CREATE TABLE PEDIDOS(
     --id do pedido 
@@ -72,37 +104,11 @@ CREATE TABLE PEDIDOS(
     StatusPedido NVARCHAR(50) NOT NULL DEFAULT 'Aguardando Pagamento',
     --Observação (por que not null? ) 
 	Observacao Nvarchar(255) not null,
-);
+)
+go;
 
---Fornecedor de materias para confecção dos produtos
-CREATE TABLE MATERIAL(
-    --id fornecedor 
-	IdMaterial int identity(1,1) primary key,
-	-- Qual a materia prima que ele fornece(Somente uma por forcedor ou multiplas contas de fornecedores para varios máteriais ? )
-	MateriaPrima Nvarchar(255) not null,
-	--Nome da empresa pertencente ao fornedor ou melhor dizendo nome da empresa fornecedora 
-	NomeFornecedor Nvarchar(255) not null,
-	-- peso da máteria prima inclusa no pedido comprado por nós
-	PesoProduto Decimal(4,2) not null,
-	--Tipo da máteria prima ou descrição da mesma 
-	Tipo Nvarchar(50) not null,
-	--Marca da máteria prima comprada
-	Marca Nvarchar(50) not null
-);
 
---Empresa que realizará o tranporte das mercadorias 
-CREATE TABLE TRANSPORTADORA(
-    -- id da transportadora 
-	IdTransportadora int identity(1,1) primary key,
-	--Nome da empresa pertencente ao Transportador ou melhor dizendo nome da empresa transportadora  
-	NomeFantasia Nvarchar(255) not null,
-	--Meio pelo qual a empresa costuma fazer o transporte 
-	MeioDeTransporte Nvarchar(255) not null,
-	-- preço pelo qual somos cobrados em média pelas transportadoras 
-	PrecoMedio Decimal(10,2) not null,
-	--observações 
-	Observacao Nvarchar(255) 
-);
+
 -- Onde serão armazenados os Pedidos 
 
 -- Solução para multiplos produtos em um unico PEDIDO, relação N para N de PRODUTOS com PEDIDOS 

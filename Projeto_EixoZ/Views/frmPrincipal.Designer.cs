@@ -31,13 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.gerencialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pedidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.rastreiarPedidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pedidosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.gerencialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pedidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rastreiarPedidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label2 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,38 +65,6 @@
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // gerencialToolStripMenuItem
-            // 
-            this.gerencialToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.pedidosToolStripMenuItem,
-            this.rastreiarPedidoToolStripMenuItem});
-            this.gerencialToolStripMenuItem.Name = "gerencialToolStripMenuItem";
-            this.gerencialToolStripMenuItem.Size = new System.Drawing.Size(85, 24);
-            this.gerencialToolStripMenuItem.Text = "Gerencial";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(312, 425);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(632, 54);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Sua empresa de produtos 3D";
-            // 
-            // pedidosToolStripMenuItem
-            // 
-            this.pedidosToolStripMenuItem.Name = "pedidosToolStripMenuItem";
-            this.pedidosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.pedidosToolStripMenuItem.Text = "Pedidos";
-            // 
-            // rastreiarPedidoToolStripMenuItem
-            // 
-            this.rastreiarPedidoToolStripMenuItem.Name = "rastreiarPedidoToolStripMenuItem";
-            this.rastreiarPedidoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.rastreiarPedidoToolStripMenuItem.Text = "Rastreiar pedidos";
-            // 
             // cadastrosToolStripMenuItem
             // 
             this.cadastrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -111,12 +79,45 @@
             this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
             this.clienteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.clienteToolStripMenuItem.Text = "Cliente";
+            this.clienteToolStripMenuItem.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
             // 
             // pedidosToolStripMenuItem1
             // 
             this.pedidosToolStripMenuItem1.Name = "pedidosToolStripMenuItem1";
             this.pedidosToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.pedidosToolStripMenuItem1.Text = "Produtos";
+            // 
+            // gerencialToolStripMenuItem
+            // 
+            this.gerencialToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pedidosToolStripMenuItem,
+            this.rastreiarPedidoToolStripMenuItem});
+            this.gerencialToolStripMenuItem.Name = "gerencialToolStripMenuItem";
+            this.gerencialToolStripMenuItem.Size = new System.Drawing.Size(85, 24);
+            this.gerencialToolStripMenuItem.Text = "Gerencial";
+            // 
+            // pedidosToolStripMenuItem
+            // 
+            this.pedidosToolStripMenuItem.Name = "pedidosToolStripMenuItem";
+            this.pedidosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.pedidosToolStripMenuItem.Text = "Pedidos";
+            // 
+            // rastreiarPedidoToolStripMenuItem
+            // 
+            this.rastreiarPedidoToolStripMenuItem.Name = "rastreiarPedidoToolStripMenuItem";
+            this.rastreiarPedidoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.rastreiarPedidoToolStripMenuItem.Text = "Rastreiar pedidos";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(312, 425);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(632, 54);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Sua empresa de produtos 3D";
             // 
             // frmPrincipal
             // 
@@ -131,7 +132,7 @@
             this.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmPrincipal";
             this.Text = "frmPrincipal";
             this.menuStrip1.ResumeLayout(false);

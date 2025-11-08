@@ -21,8 +21,8 @@ namespace Projeto_EixoZ.Services
             //Nome do banco de dados
             //Autenticação (Usuario e Senha ou Autenticação do Windows)
             connection.ConnectionString =
-                "Data Source=.\\SQLEXPRESS;" +
-                "Initial Catalog=testeMVC;" +
+                "Data Source=.\\MSSQLSERVER01;" +
+                "Initial Catalog=EixoZ;" +
                 "Integrated Security=SSPI;";
 
             //Método para abrir a conexão
@@ -51,7 +51,7 @@ namespace Projeto_EixoZ.Services
             return command.ExecuteScalar();
         }
 
-        //Método pulibo que executa comando SQL 
+        //Método publico que executa comando SQL 
         //Retorna todas as linhas e colunas da consult
         public DataTable GetDataTable(SqlCommand command)
         {

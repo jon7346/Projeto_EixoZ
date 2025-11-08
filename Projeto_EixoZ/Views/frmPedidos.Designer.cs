@@ -1,6 +1,6 @@
 ﻿namespace Projeto_EixoZ.Views
 {
-    partial class frmMaterial
+    partial class frmPedidos
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMaterial));
             this.CBSelec = new System.Windows.Forms.ComboBox();
             this.dgvDadosRetornados = new System.Windows.Forms.DataGridView();
             this.btnViualizar = new System.Windows.Forms.Button();
@@ -46,103 +45,106 @@
             // 
             this.CBSelec.FormattingEnabled = true;
             this.CBSelec.Items.AddRange(new object[] {
-            "Id ",
-            "Materia prima",
-            "Nome do fornecedor ",
-            "Peso do produto ",
-            "Tipo",
-            "Marca"});
-            this.CBSelec.Location = new System.Drawing.Point(600, 41);
+            "Id",
+            "Id do cliente",
+            "Id da transportadora ",
+            "Id do vendedor ",
+            "Endereço de entrega",
+            "Data do Pedido ",
+            "Status do Pedido ",
+            "Observação "});
+            this.CBSelec.Location = new System.Drawing.Point(583, 35);
             this.CBSelec.Name = "CBSelec";
             this.CBSelec.Size = new System.Drawing.Size(121, 24);
-            this.CBSelec.TabIndex = 30;
+            this.CBSelec.TabIndex = 40;
             // 
             // dgvDadosRetornados
             // 
             this.dgvDadosRetornados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDadosRetornados.Location = new System.Drawing.Point(32, 82);
+            this.dgvDadosRetornados.Location = new System.Drawing.Point(15, 76);
             this.dgvDadosRetornados.Name = "dgvDadosRetornados";
             this.dgvDadosRetornados.RowHeadersWidth = 51;
             this.dgvDadosRetornados.RowTemplate.Height = 24;
             this.dgvDadosRetornados.Size = new System.Drawing.Size(518, 218);
-            this.dgvDadosRetornados.TabIndex = 29;
+            this.dgvDadosRetornados.TabIndex = 39;
             // 
             // btnViualizar
             // 
-            this.btnViualizar.Location = new System.Drawing.Point(701, 414);
+            this.btnViualizar.Location = new System.Drawing.Point(684, 408);
             this.btnViualizar.Name = "btnViualizar";
             this.btnViualizar.Size = new System.Drawing.Size(119, 26);
-            this.btnViualizar.TabIndex = 28;
+            this.btnViualizar.TabIndex = 38;
             this.btnViualizar.Text = "Visualizar";
             this.btnViualizar.UseVisualStyleBackColor = true;
             // 
             // btnExcluir
             // 
-            this.btnExcluir.Location = new System.Drawing.Point(576, 414);
+            this.btnExcluir.Location = new System.Drawing.Point(559, 408);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(119, 26);
-            this.btnExcluir.TabIndex = 27;
+            this.btnExcluir.TabIndex = 37;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
             // 
             // btnAlterar
             // 
-            this.btnAlterar.Location = new System.Drawing.Point(451, 414);
+            this.btnAlterar.Location = new System.Drawing.Point(434, 408);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(119, 26);
-            this.btnAlterar.TabIndex = 26;
+            this.btnAlterar.TabIndex = 36;
             this.btnAlterar.Text = "Alterar";
             this.btnAlterar.UseVisualStyleBackColor = true;
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(326, 414);
+            this.btnAdd.Location = new System.Drawing.Point(309, 408);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(119, 26);
-            this.btnAdd.TabIndex = 25;
+            this.btnAdd.TabIndex = 35;
             this.btnAdd.Text = "Adicionar";
             this.btnAdd.UseVisualStyleBackColor = true;
             // 
             // btnPesquisar
             // 
-            this.btnPesquisar.Location = new System.Drawing.Point(602, 91);
+            this.btnPesquisar.Location = new System.Drawing.Point(585, 85);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(119, 26);
-            this.btnPesquisar.TabIndex = 24;
+            this.btnPesquisar.TabIndex = 34;
             this.btnPesquisar.Text = "Pesquisar";
             this.btnPesquisar.UseVisualStyleBackColor = true;
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
             // txtPesquisa
             // 
-            this.txtPesquisa.Location = new System.Drawing.Point(32, 41);
+            this.txtPesquisa.Location = new System.Drawing.Point(15, 35);
             this.txtPesquisa.Multiline = true;
             this.txtPesquisa.Name = "txtPesquisa";
             this.txtPesquisa.Size = new System.Drawing.Size(553, 22);
-            this.txtPesquisa.TabIndex = 23;
+            this.txtPesquisa.TabIndex = 33;
             // 
             // lblRegistros
             // 
             this.lblRegistros.AutoSize = true;
-            this.lblRegistros.Location = new System.Drawing.Point(15, 385);
+            this.lblRegistros.Location = new System.Drawing.Point(-2, 379);
             this.lblRegistros.Name = "lblRegistros";
             this.lblRegistros.Size = new System.Drawing.Size(65, 16);
-            this.lblRegistros.TabIndex = 22;
+            this.lblRegistros.TabIndex = 32;
             this.lblRegistros.Text = "Registros";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(29, 22);
+            this.label1.Location = new System.Drawing.Point(12, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 20);
-            this.label1.TabIndex = 21;
+            this.label1.Size = new System.Drawing.Size(62, 16);
+            this.label1.TabIndex = 31;
             this.label1.Text = "Materiais";
             // 
-            // frmMaterial
+            // frmPedidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(849, 495);
+            this.ClientSize = new System.Drawing.Size(825, 450);
             this.Controls.Add(this.CBSelec);
             this.Controls.Add(this.dgvDadosRetornados);
             this.Controls.Add(this.btnViualizar);
@@ -153,9 +155,8 @@
             this.Controls.Add(this.txtPesquisa);
             this.Controls.Add(this.lblRegistros);
             this.Controls.Add(this.label1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "frmMaterial";
-            this.Text = "frmProduto";
+            this.Name = "frmPedidos";
+            this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dgvDadosRetornados)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

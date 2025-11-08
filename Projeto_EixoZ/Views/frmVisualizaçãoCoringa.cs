@@ -59,11 +59,7 @@ namespace Projeto_EixoZ.Views
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            switch() 
-            {
-                case 1: 
-
-            }
+         
         }
     }
 }

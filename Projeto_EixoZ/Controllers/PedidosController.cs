@@ -176,9 +176,34 @@ namespace Projeto_EixoZ.Controllers
         //Método para consultar po nome
         //Aplicando o filtro diretamente no método
         //Onde é preciso definir o campo e o valor do filtro
-        public PedidosCollection GetByName(string value)
+        public PedidosCollection GetByData(string value)
         {
             return GetByFilter("DataPedido LIKE '%" + value + "%'");
         }
+        public PedidosCollection GetByIdCliente(string value)
+        {
+            return GetByFilter("IdCliente = " + value );
+        }
+        public PedidosCollection GetByIdTransportadora(string value)
+        {
+            return GetByFilter("IdTransportadora =" + value );
+        }
+        public PedidosCollection GetByIdVendedor(string value)
+        {
+            return GetByFilter("IdVendedor =" + value );
+        }
+        public PedidosCollection GetByEndereco(string value)
+        {
+            return GetByFilter("EnderecoEntrega LIKE '%" + value + "%'");
+        }
+        public PedidosCollection GetByStatus(string value)
+        {
+            return GetByFilter("StatusPedido LIKE '%" + value + "%'");
+        }
+        public PedidosCollection GetByObeservacao(string value)
+        {
+            return GetByFilter("Observacao LIKE '%" + value + "%'");
+        }
+    
     }
 }

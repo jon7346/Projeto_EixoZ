@@ -7,6 +7,7 @@ using Projeto_EixoZ.Services;
 using System.Data;
 using System.Data.SqlClient;
 using Projeto_EixoZ.Models;
+using System.Net;
 
 namespace Projeto_EixoZ.Controllers
 {
@@ -55,7 +56,7 @@ namespace Projeto_EixoZ.Controllers
             command.Parameters.AddWithValue("@Idade", cliente.Idade);
             command.Parameters.AddWithValue("@Email", cliente.Email);
             command.Parameters.AddWithValue("@Senha", cliente.Senha);
-            command.Parameters.AddWithValue("@Enderco", cliente.Endereco);
+            command.Parameters.AddWithValue("@Endereco", cliente.Endereco);
             command.Parameters.AddWithValue("@IdCliente", cliente.ClienteId);
             //Executando o comando SQL e retornando
             //a quantidade de linhas afetadas
@@ -125,15 +126,17 @@ namespace Projeto_EixoZ.Controllers
             //todos os registros na tabela de clientes
             string query = "SELECT * FROM CLIENTE ";
 
+            
             //Validar se o filtro foi passado no parametro
             if (filtro != "")
-                query += "WHERE @filtro ";
+                query += " WHERE " + filtro;
 
-            query += "ORDER BY Nome";
+            query += " ORDER BY nome";
 
+            //query += "ORDER BY Nome";
             SqlCommand command = new SqlCommand(query);
 
-            command.Parameters.AddWithValue("@filtro", filtro);
+
             //Executando o comando SQL e armazenando o resultado
             //em um objeto do tipo DataTable
             DataTable dataTable = dataBase.GetDataTable(command);
@@ -177,7 +180,18 @@ namespace Projeto_EixoZ.Controllers
         //Método para consultar por email
         public ClienteCollection GetByEmail(string value)
         {
-            return GetByFilter("Email = " + value);
+            return GetByFilter("Email LIKE '%" + value + "%'");
         }
-    }
+
+        public ClienteCollection GetByEndereco(string value)
+        {
+            return GetByFilter("Endereco LIKE '%" + value + "%'");
+        }
+        
+            public ClienteCollection GetByIdade(string value)
+        {
+            return GetByFilter("Idade LIKE '%" + value + "%'");
+        }
+
+    }  
 }

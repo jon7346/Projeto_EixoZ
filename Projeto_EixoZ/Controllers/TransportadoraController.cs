@@ -167,6 +167,24 @@ namespace Projeto_EixoZ.Controllers
         {
             return GetByFilter("NomeFantasia LIKE '%" + value + "%'");
         }
+        /* 
 
+           Meio de transporte 
+           Preço médio 
+           Observação
+
+        */
+        public TransportadoraCollection GetByMeioTransporte(string value)
+        {
+            return GetByFilter("MeioDeTransporte LIKE '%" + value + "%'");
+        }
+        public TransportadoraCollection GetByPrecoMedio(string value)
+        {
+            return GetByFilter("PrecoMedio LIKE '%" + value + "%'");
+        }
+        public TransportadoraCollection GetByObservacao(string value)
+        {
+            return GetByFilter("Observacao LIKE '%" + value + "%'");
+        }
     }
 }
