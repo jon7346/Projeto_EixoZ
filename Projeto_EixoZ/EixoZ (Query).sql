@@ -19,7 +19,6 @@
 		JON: FAZER AS PÁGINAS DE VISUALIZAÇÕES: "UMA PG DE VIEW COM FILTRO DE VISUALIZAÇÃO PARA AS TABELAS"
 
 */
-
 CREATE DATABASE EixoZ;
 GO
 USE EixoZ;
@@ -55,7 +54,7 @@ CREATE TABLE VENDEDOR(
 	-- Endereço do mesmo 
 	Endereco Nvarchar(255) not null
 );
-go 
+go
 -- materias para confecção dos produtos
 CREATE TABLE MATERIAL(
     --id do material 
@@ -104,8 +103,8 @@ CREATE TABLE PEDIDOS(
     StatusPedido NVARCHAR(50) NOT NULL DEFAULT 'Aguardando Pagamento',
     --Observação (por que not null? ) 
 	Observacao Nvarchar(255) not null,
-)
-go;
+);
+go
 
 
 
@@ -124,4 +123,4 @@ CREATE TABLE ITENS_PEDIDOS(
 	--Preço unitário utilizado para a venda ou preço final 
     PrecoUnitarioVenda DECIMAL(10,2) ,
 );
-GO
+
