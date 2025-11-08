@@ -1,6 +1,6 @@
 ﻿namespace Projeto_EixoZ.Views
 {
-    partial class frmCadProduto
+    partial class frmCadMaterial
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadProduto));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadMaterial));
             this.txtTmoCadProd = new System.Windows.Forms.TextBox();
             this.txtPrecoCadProd = new System.Windows.Forms.TextBox();
             this.txtPesoCadProd = new System.Windows.Forms.TextBox();
@@ -61,28 +61,28 @@
             // 
             // txtPesoCadProd
             // 
-            this.txtPesoCadProd.Location = new System.Drawing.Point(15, 262);
+            this.txtPesoCadProd.Location = new System.Drawing.Point(15, 181);
             this.txtPesoCadProd.Name = "txtPesoCadProd";
             this.txtPesoCadProd.Size = new System.Drawing.Size(136, 22);
             this.txtPesoCadProd.TabIndex = 21;
             // 
             // txtMtlCadProd
             // 
-            this.txtMtlCadProd.Location = new System.Drawing.Point(15, 203);
+            this.txtMtlCadProd.Location = new System.Drawing.Point(15, 132);
             this.txtMtlCadProd.Name = "txtMtlCadProd";
             this.txtMtlCadProd.Size = new System.Drawing.Size(136, 22);
             this.txtMtlCadProd.TabIndex = 20;
             // 
             // txtNomeCadProd
             // 
-            this.txtNomeCadProd.Location = new System.Drawing.Point(15, 140);
+            this.txtNomeCadProd.Location = new System.Drawing.Point(12, 88);
             this.txtNomeCadProd.Name = "txtNomeCadProd";
             this.txtNomeCadProd.Size = new System.Drawing.Size(136, 22);
             this.txtNomeCadProd.TabIndex = 19;
             // 
             // txtIDCadProd
             // 
-            this.txtIDCadProd.Location = new System.Drawing.Point(12, 55);
+            this.txtIDCadProd.Location = new System.Drawing.Point(12, 44);
             this.txtIDCadProd.Name = "txtIDCadProd";
             this.txtIDCadProd.Size = new System.Drawing.Size(136, 22);
             this.txtIDCadProd.TabIndex = 18;
@@ -108,7 +108,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 228);
+            this.label4.Location = new System.Drawing.Point(16, 162);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(42, 16);
             this.label4.TabIndex = 15;
@@ -117,20 +117,20 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 165);
+            this.label3.Location = new System.Drawing.Point(12, 113);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 16);
+            this.label3.Size = new System.Drawing.Size(89, 16);
             this.label3.TabIndex = 14;
-            this.label3.Text = "Material:";
+            this.label3.Text = "Materia prima";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 94);
+            this.label2.Location = new System.Drawing.Point(11, 69);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 16);
+            this.label2.Size = new System.Drawing.Size(120, 16);
             this.label2.TabIndex = 13;
-            this.label2.Text = "Nome:";
+            this.label2.Text = "Nome Fornecedor:";
             // 
             // label1
             // 
@@ -159,7 +159,7 @@
             this.btnClrCadProd.Text = "Cancelar";
             this.btnClrCadProd.UseVisualStyleBackColor = true;
             // 
-            // frmCadProduto
+            // frmCadMaterial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -179,7 +179,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "frmCadProduto";
+            this.Name = "frmCadMaterial";
             this.Text = "frmCadProduto";
             this.ResumeLayout(false);
             this.PerformLayout();

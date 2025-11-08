@@ -11,23 +11,28 @@ using Projeto_EixoZ.Controllers;
 
 namespace Projeto_EixoZ.Views
 {
-    public partial class frmVisualização: Form
+    public partial class frmVisualizaçãoCoringa: Form
     {
        
-        public frmVisualização()
+        public frmVisualizaçãoCoringa()
         {
             ClienteController CLIControler = new ClienteController();
-            //MaterialController FORController = new MaterialController();
-            PedidosController PEDControler = new PedidosController(); 
+            MateriaisController FORController = new MateriaisController();
+            PedidosController PEDController = new PedidosController();
+            VendedorController VENController = new VendedorController();
+            TransportadoraController TRANController = new TransportadoraController();
             
             InitializeComponent();
 
-            void AtualizarGrid()
+            // Atualiza a lista 
+            void AtualizarGrid(ClienteController Cli, MateriaisController Mat)
             {
                 dgvDados.DataSource = null;
         
-                dgvDados.DataSource = CLIControler.GetAll();
+                dgvDados.DataSource = Cli.GetAll();
+
                 
+
                 lblRegistros.Text = "Registros encontrados: " + dgvDados.RowCount.ToString();
             }
         }
@@ -50,6 +55,15 @@ namespace Projeto_EixoZ.Views
         private void btnVisualizar_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch() 
+            {
+                case 1: 
+
+            }
         }
     }
 }

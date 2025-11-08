@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Projeto_EixoZ
+namespace Projeto_EixoZ.Views
 {
-    public partial class Form1: Form
+    public partial class frmMaterial: Form
     {
-        public Form1()
+        public frmMaterial()
         {
             InitializeComponent();
         }

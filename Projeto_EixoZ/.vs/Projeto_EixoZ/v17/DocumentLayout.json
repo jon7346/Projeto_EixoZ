@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\jonat\\source\\repos\\jon7346\\Projeto_EixoZ\\Projeto_EixoZ\\Projeto_EixoZ\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|c:\\users\\jonat\\source\\repos\\jon7346\\projeto_eixoz\\projeto_eixoz\\projeto_eixoz\\views\\frmmaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|solutionrelative:views\\frmmaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|c:\\users\\jonat\\source\\repos\\jon7346\\projeto_eixoz\\projeto_eixoz\\projeto_eixoz\\views\\frmcadmaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|solutionrelative:views\\frmcadmaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|c:\\users\\jonat\\source\\repos\\jon7346\\projeto_eixoz\\projeto_eixoz\\projeto_eixoz\\views\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|solutionrelative:views\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,6 +39,42 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmPrincipal.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\jonat\\source\\repos\\jon7346\\Projeto_EixoZ\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmPrincipal.cs",
+              "RelativeDocumentMoniker": "Views\\frmPrincipal.cs",
+              "ToolTip": "C:\\Users\\jonat\\source\\repos\\jon7346\\Projeto_EixoZ\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmPrincipal.cs [Design]",
+              "RelativeToolTip": "Views\\frmPrincipal.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T00:04:41.605Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmMaterial.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\jonat\\source\\repos\\jon7346\\Projeto_EixoZ\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmMaterial.cs",
+              "RelativeDocumentMoniker": "Views\\frmMaterial.cs",
+              "ToolTip": "C:\\Users\\jonat\\source\\repos\\jon7346\\Projeto_EixoZ\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmMaterial.cs [Design]",
+              "RelativeToolTip": "Views\\frmMaterial.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T00:04:20.579Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmCadMaterial.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\jonat\\source\\repos\\jon7346\\Projeto_EixoZ\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmCadMaterial.cs",
+              "RelativeDocumentMoniker": "Views\\frmCadMaterial.cs",
+              "ToolTip": "C:\\Users\\jonat\\source\\repos\\jon7346\\Projeto_EixoZ\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmCadMaterial.cs [Design]",
+              "RelativeToolTip": "Views\\frmCadMaterial.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T00:04:01.715Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

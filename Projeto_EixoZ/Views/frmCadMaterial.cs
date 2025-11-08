@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Projeto_EixoZ.Views
 {
-    public partial class frmProduto: Form
+    public partial class frmCadMaterial: Form
     {
-        public frmProduto()
+        public frmCadMaterial()
         {
             InitializeComponent();
         }
