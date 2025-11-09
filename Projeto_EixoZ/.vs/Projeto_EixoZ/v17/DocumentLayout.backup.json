@@ -1,14 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\jonat\\source\\repos\\jon7346\\Projeto_EixoZ\\Projeto_EixoZ\\Projeto_EixoZ\\",
+  "WorkspaceRootPath": "C:\\GitHub\\C#\\MVC-POO\\Projeto_EixoZ\\Projeto_EixoZ\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|c:\\users\\jonat\\source\\repos\\jon7346\\projeto_eixoz\\projeto_eixoz\\projeto_eixoz\\eixoz (query).sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|solutionrelative:eixoz (query).sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+      "AbsoluteMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|c:\\github\\c#\\mvc-poo\\projeto_eixoz\\projeto_eixoz\\views\\frmcadpedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|solutionrelative:views\\frmcadpedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|c:\\users\\jonat\\source\\repos\\jon7346\\projeto_eixoz\\projeto_eixoz\\projeto_eixoz\\eixoz (query).sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|solutionrelative:eixoz (query).sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+      "AbsoluteMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|c:\\github\\c#\\mvc-poo\\projeto_eixoz\\projeto_eixoz\\views\\frmcadmaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|solutionrelative:views\\frmcadmaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|c:\\github\\c#\\mvc-poo\\projeto_eixoz\\projeto_eixoz\\views\\frmcadpedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|solutionrelative:views\\frmcadpedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +22,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 7,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -41,41 +49,42 @@
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "e990afd1-48ed-481e-9f99-ae1a40adefb0",
-        "Display": 1,
-        "X": 548,
-        "Y": 236,
-        "Width": 1882,
-        "Height": 958,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmCadMaterial.cs",
+              "DocumentMoniker": "C:\\GitHub\\C#\\MVC-POO\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmCadMaterial.cs",
+              "RelativeDocumentMoniker": "Views\\frmCadMaterial.cs",
+              "ToolTip": "C:\\GitHub\\C#\\MVC-POO\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmCadMaterial.cs",
+              "RelativeToolTip": "Views\\frmCadMaterial.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAowHIAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T20:19:30.718Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EixoZ (Query).sql ",
-              "DocumentMoniker": "C:\\Users\\jonat\\source\\repos\\jon7346\\Projeto_EixoZ\\Projeto_EixoZ\\Projeto_EixoZ\\EixoZ (Query).sql",
-              "RelativeDocumentMoniker": "EixoZ (Query).sql",
-              "ToolTip": "C:\\Users\\jonat\\source\\repos\\jon7346\\Projeto_EixoZ\\Projeto_EixoZ\\Projeto_EixoZ\\EixoZ (Query).sql",
-              "RelativeToolTip": "EixoZ (Query).sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-11-08T15:28:01.633Z",
+              "Title": "frmCadPedidos.cs",
+              "DocumentMoniker": "C:\\GitHub\\C#\\MVC-POO\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmCadPedidos.cs",
+              "RelativeDocumentMoniker": "Views\\frmCadPedidos.cs",
+              "ToolTip": "C:\\GitHub\\C#\\MVC-POO\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmCadPedidos.cs",
+              "RelativeToolTip": "Views\\frmCadPedidos.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAowGcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T20:08:58.284Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmCadPedidos.cs [Design]",
+              "DocumentMoniker": "C:\\GitHub\\C#\\MVC-POO\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmCadPedidos.cs",
+              "RelativeDocumentMoniker": "Views\\frmCadPedidos.cs",
+              "ToolTip": "C:\\GitHub\\C#\\MVC-POO\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmCadPedidos.cs [Design]",
+              "RelativeToolTip": "Views\\frmCadPedidos.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T20:08:51.203Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
