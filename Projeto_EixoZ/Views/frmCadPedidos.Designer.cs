@@ -44,7 +44,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.txtIDVend = new System.Windows.Forms.TextBox();
+            this.txtEnderecoEntrega = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnCancelarCadPedido
@@ -55,6 +55,7 @@
             this.btnCancelarCadPedido.TabIndex = 27;
             this.btnCancelarCadPedido.Text = "Cancelar";
             this.btnCancelarCadPedido.UseVisualStyleBackColor = true;
+            this.btnCancelarCadPedido.Click += new System.EventHandler(this.btnCancelarCadPedido_Click);
             // 
             // btnSalvarCadPedido
             // 
@@ -64,6 +65,7 @@
             this.btnSalvarCadPedido.TabIndex = 26;
             this.btnSalvarCadPedido.Text = "Salvar";
             this.btnSalvarCadPedido.UseVisualStyleBackColor = true;
+            this.btnSalvarCadPedido.Click += new System.EventHandler(this.btnSalvarCadPedido_Click);
             // 
             // txtObsCadPedidos
             // 
@@ -166,23 +168,23 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(103, 216);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(86, 16);
+            this.label9.Size = new System.Drawing.Size(138, 16);
             this.label9.TabIndex = 30;
-            this.label9.Text = "ID Vendedor:";
+            this.label9.Text = "Endereco de Entrega:";
             // 
-            // txtIDVend
+            // txtEnderecoEntrega
             // 
-            this.txtIDVend.Location = new System.Drawing.Point(106, 235);
-            this.txtIDVend.Name = "txtIDVend";
-            this.txtIDVend.Size = new System.Drawing.Size(180, 22);
-            this.txtIDVend.TabIndex = 31;
+            this.txtEnderecoEntrega.Location = new System.Drawing.Point(106, 235);
+            this.txtEnderecoEntrega.Name = "txtEnderecoEntrega";
+            this.txtEnderecoEntrega.Size = new System.Drawing.Size(180, 22);
+            this.txtEnderecoEntrega.TabIndex = 31;
             // 
             // frmCadPedidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.txtIDVend);
+            this.Controls.Add(this.txtEnderecoEntrega);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -223,6 +225,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txtIDVend;
+        private System.Windows.Forms.TextBox txtEnderecoEntrega;
     }
 }
