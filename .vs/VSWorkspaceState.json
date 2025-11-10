@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Projeto_EixoZ"
+    "\\Projeto_EixoZ",
+    "\\Projeto_EixoZ\\Views"
   ],
-  "SelectedNode": "\\Projeto_EixoZ\\EixoZ (Query).sql",
+  "SelectedNode": "\\Projeto_EixoZ\\Views\\frmCadTransportadora.cs",
   "PreviewInSolutionExplorer": false
 }

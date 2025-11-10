@@ -1,26 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\GitHub\\C#\\MVC-POO\\Projeto_EixoZ\\Projeto_EixoZ\\",
+  "WorkspaceRootPath": "C:\\GitHub\\C#\\Projeto_EixoZ\\Projeto_EixoZ\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|c:\\github\\c#\\mvc-poo\\projeto_eixoz\\projeto_eixoz\\views\\frmcadtransportadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|solutionrelative:views\\frmcadtransportadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|c:\\github\\c#\\projeto_eixoz\\projeto_eixoz\\views\\frmcadvendedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|solutionrelative:views\\frmcadvendedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|C:\\GitHub\\C#\\MVC-POO\\Projeto_EixoZ\\Projeto_EixoZ\\views\\frmcadmaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|solutionrelative:views\\frmcadmaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|c:\\github\\c#\\mvc-poo\\projeto_eixoz\\projeto_eixoz\\views\\frmcadpedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|C:\\GitHub\\C#\\Projeto_EixoZ\\Projeto_EixoZ\\views\\frmcadpedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|solutionrelative:views\\frmcadpedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|c:\\github\\c#\\mvc-poo\\projeto_eixoz\\projeto_eixoz\\views\\frmcadtransportadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|solutionrelative:views\\frmcadtransportadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|C:\\GitHub\\C#\\Projeto_EixoZ\\Projeto_EixoZ\\views\\frmcadmaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|solutionrelative:views\\frmcadmaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|c:\\github\\c#\\mvc-poo\\projeto_eixoz\\projeto_eixoz\\models\\transportadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|solutionrelative:models\\transportadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|c:\\github\\c#\\projeto_eixoz\\projeto_eixoz\\views\\frmcadtransportadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|solutionrelative:views\\frmcadtransportadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|c:\\github\\c#\\projeto_eixoz\\projeto_eixoz\\views\\frmcadastrocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|solutionrelative:views\\frmcadastrocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,15 +30,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Bookmark",
@@ -58,67 +58,68 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Transportadora.cs",
-              "DocumentMoniker": "C:\\GitHub\\C#\\MVC-POO\\Projeto_EixoZ\\Projeto_EixoZ\\Models\\Transportadora.cs",
-              "RelativeDocumentMoniker": "Models\\Transportadora.cs",
-              "ToolTip": "C:\\GitHub\\C#\\MVC-POO\\Projeto_EixoZ\\Projeto_EixoZ\\Models\\Transportadora.cs",
-              "RelativeToolTip": "Models\\Transportadora.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "frmCadVendedor.cs",
+              "DocumentMoniker": "C:\\GitHub\\C#\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmCadVendedor.cs",
+              "RelativeDocumentMoniker": "Views\\frmCadVendedor.cs",
+              "ToolTip": "C:\\GitHub\\C#\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmCadVendedor.cs",
+              "RelativeToolTip": "Views\\frmCadVendedor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T21:27:48.324Z",
+              "WhenOpened": "2025-11-10T16:24:02.294Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "frmCadastroCliente.cs",
+              "DocumentMoniker": "C:\\GitHub\\C#\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmCadastroCliente.cs",
+              "RelativeDocumentMoniker": "Views\\frmCadastroCliente.cs",
+              "ToolTip": "C:\\GitHub\\C#\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmCadastroCliente.cs",
+              "RelativeToolTip": "Views\\frmCadastroCliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T16:23:59.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "frmCadTransportadora.cs",
-              "DocumentMoniker": "C:\\GitHub\\C#\\MVC-POO\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmCadTransportadora.cs",
+              "DocumentMoniker": "C:\\GitHub\\C#\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmCadTransportadora.cs",
               "RelativeDocumentMoniker": "Views\\frmCadTransportadora.cs",
-              "ToolTip": "C:\\GitHub\\C#\\MVC-POO\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmCadTransportadora.cs",
+              "ToolTip": "C:\\GitHub\\C#\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmCadTransportadora.cs",
               "RelativeToolTip": "Views\\frmCadTransportadora.cs",
-              "ViewState": "AgIAAFMAAAAAAAAAAAArwAcAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-09T21:18:53.996Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "frmCadMaterial.cs",
-              "DocumentMoniker": "C:\\GitHub\\C#\\MVC-POO\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmCadMaterial.cs",
+              "DocumentMoniker": "C:\\GitHub\\C#\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmCadMaterial.cs",
               "RelativeDocumentMoniker": "Views\\frmCadMaterial.cs",
-              "ToolTip": "C:\\GitHub\\C#\\MVC-POO\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmCadMaterial.cs",
+              "ToolTip": "C:\\GitHub\\C#\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmCadMaterial.cs",
               "RelativeToolTip": "Views\\frmCadMaterial.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAkwAMAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-09T20:19:30.718Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "frmCadPedidos.cs",
-              "DocumentMoniker": "C:\\GitHub\\C#\\MVC-POO\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmCadPedidos.cs",
+              "DocumentMoniker": "C:\\GitHub\\C#\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmCadPedidos.cs",
               "RelativeDocumentMoniker": "Views\\frmCadPedidos.cs",
-              "ToolTip": "C:\\GitHub\\C#\\MVC-POO\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmCadPedidos.cs",
+              "ToolTip": "C:\\GitHub\\C#\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmCadPedidos.cs",
               "RelativeToolTip": "Views\\frmCadPedidos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIQAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAADUAAAAAAAAAAAAgwEIAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-09T20:08:58.284Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmCadTransportadora.cs [Design]",
-              "DocumentMoniker": "C:\\GitHub\\C#\\MVC-POO\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmCadTransportadora.cs",
-              "RelativeDocumentMoniker": "Views\\frmCadTransportadora.cs",
-              "ToolTip": "C:\\GitHub\\C#\\MVC-POO\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmCadTransportadora.cs [Design]",
-              "RelativeToolTip": "Views\\frmCadTransportadora.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T21:18:33.639Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }
