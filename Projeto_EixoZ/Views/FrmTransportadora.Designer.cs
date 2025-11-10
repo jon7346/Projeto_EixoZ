@@ -100,6 +100,7 @@
             this.btnAdd.TabIndex = 45;
             this.btnAdd.Text = "Adicionar";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnPesquisar
             // 
@@ -133,7 +134,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(30, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(126, 20);
+            this.label1.Size = new System.Drawing.Size(101, 16);
             this.label1.TabIndex = 41;
             this.label1.Text = "Transportadora";
             // 

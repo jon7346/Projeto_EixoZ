@@ -68,5 +68,11 @@ namespace Projeto_EixoZ.Views
             AtualizarGrid(txtPesquisa.Text);
 
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            frmCadMaterial tela = new frmCadMaterial();
+            tela.ShowDialog();
+        }
     }
 }

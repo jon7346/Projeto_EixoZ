@@ -60,7 +60,8 @@ namespace Projeto_EixoZ.Views
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-
+            frmCadastroCliente tela = new frmCadastroCliente();
+            tela.ShowDialog();
         }
 
         private void btnAlterar_Click(object sender, EventArgs e)

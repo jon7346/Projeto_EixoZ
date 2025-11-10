@@ -38,6 +38,7 @@
             this.pedidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rastreiarPedidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label2 = new System.Windows.Forms.Label();
+            this.tranportadorasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,7 +70,8 @@
             // 
             this.cadastrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.clienteToolStripMenuItem,
-            this.pedidosToolStripMenuItem1});
+            this.pedidosToolStripMenuItem1,
+            this.tranportadorasToolStripMenuItem});
             this.cadastrosToolStripMenuItem.Name = "cadastrosToolStripMenuItem";
             this.cadastrosToolStripMenuItem.Size = new System.Drawing.Size(88, 24);
             this.cadastrosToolStripMenuItem.Text = "Cadastros";
@@ -85,7 +87,8 @@
             // 
             this.pedidosToolStripMenuItem1.Name = "pedidosToolStripMenuItem1";
             this.pedidosToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
-            this.pedidosToolStripMenuItem1.Text = "Produtos";
+            this.pedidosToolStripMenuItem1.Text = "Materiais";
+            this.pedidosToolStripMenuItem1.Click += new System.EventHandler(this.pedidosToolStripMenuItem1_Click);
             // 
             // gerencialToolStripMenuItem
             // 
@@ -99,13 +102,14 @@
             // pedidosToolStripMenuItem
             // 
             this.pedidosToolStripMenuItem.Name = "pedidosToolStripMenuItem";
-            this.pedidosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.pedidosToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
             this.pedidosToolStripMenuItem.Text = "Pedidos";
+            this.pedidosToolStripMenuItem.Click += new System.EventHandler(this.pedidosToolStripMenuItem_Click);
             // 
             // rastreiarPedidoToolStripMenuItem
             // 
             this.rastreiarPedidoToolStripMenuItem.Name = "rastreiarPedidoToolStripMenuItem";
-            this.rastreiarPedidoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.rastreiarPedidoToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
             this.rastreiarPedidoToolStripMenuItem.Text = "Rastreiar pedidos";
             // 
             // label2
@@ -118,6 +122,13 @@
             this.label2.Size = new System.Drawing.Size(632, 54);
             this.label2.TabIndex = 2;
             this.label2.Text = "Sua empresa de produtos 3D";
+            // 
+            // tranportadorasToolStripMenuItem
+            // 
+            this.tranportadorasToolStripMenuItem.Name = "tranportadorasToolStripMenuItem";
+            this.tranportadorasToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.tranportadorasToolStripMenuItem.Text = "Tranportadoras";
+            this.tranportadorasToolStripMenuItem.Click += new System.EventHandler(this.tranportadorasToolStripMenuItem_Click);
             // 
             // frmPrincipal
             // 
@@ -153,5 +164,6 @@
         private System.Windows.Forms.ToolStripMenuItem cadastrosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clienteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pedidosToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem tranportadorasToolStripMenuItem;
     }
 }

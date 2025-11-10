@@ -73,5 +73,11 @@ namespace Projeto_EixoZ.Views
         {
             AtualizarGrid(txtPesquisa.Text);
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            frmCadPedidos tela = new frmCadPedidos();
+            tela.ShowDialog();
+        }
     }
 }

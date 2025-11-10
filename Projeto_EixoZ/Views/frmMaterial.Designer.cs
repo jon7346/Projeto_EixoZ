@@ -102,6 +102,7 @@
             this.btnAdd.TabIndex = 25;
             this.btnAdd.Text = "Adicionar";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnPesquisar
             // 
@@ -134,7 +135,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(29, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 20);
+            this.label1.Size = new System.Drawing.Size(62, 16);
             this.label1.TabIndex = 21;
             this.label1.Text = "Materiais";
             // 

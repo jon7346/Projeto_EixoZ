@@ -101,6 +101,7 @@
             this.btnAdd.TabIndex = 35;
             this.btnAdd.Text = "Adicionar";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnPesquisar
             // 

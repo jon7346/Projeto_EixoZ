@@ -22,5 +22,24 @@ namespace Projeto_EixoZ.Views
             frmCliente telaCLI = new frmCliente();
             telaCLI.ShowDialog();
         }
+
+        private void pedidosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPedidos tela = new frmPedidos();
+            tela.ShowDialog();
+        }
+
+        private void pedidosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmMaterial tela = new frmMaterial();
+            tela.ShowDialog();
+
+        }
+
+        private void tranportadorasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmTransportadora tela = new FrmTransportadora() ;
+            tela.ShowDialog();
+        }
     }
 }
