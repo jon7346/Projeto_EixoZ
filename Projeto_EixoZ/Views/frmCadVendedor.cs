@@ -69,10 +69,8 @@ namespace Projeto_EixoZ.Views
             txtEnderecoCadVendedor.Text = vendedor.Endereco.ToString();
             txtIdadeCadVendedor.Text = vendedor.Idade.ToString();
         }
-
-        private void btnSalvarCadVendedor_Click(object sender, EventArgs e)
+        private void btnSalvarCadVendedor_Click_1(object sender, EventArgs e)
         {
-
             Vendedor vendedor = new Vendedor();
 
             vendedor.Nome = txtNomeCadVendedor.Text;
@@ -105,7 +103,7 @@ namespace Projeto_EixoZ.Views
                     MessageBoxIcon.Warning);
         }
 
-        private void btnCancelarCadVendedor_Click(object sender, EventArgs e)
+        private void btnCancelarCadVendedor_Click_1(object sender, EventArgs e)
         {
             if (btnSalvarCadVendedor.Visible == false)
             {

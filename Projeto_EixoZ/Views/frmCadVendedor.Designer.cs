@@ -53,6 +53,7 @@
             this.btnCancelarCadVendedor.TabIndex = 41;
             this.btnCancelarCadVendedor.Text = "Cancelar";
             this.btnCancelarCadVendedor.UseVisualStyleBackColor = true;
+            this.btnCancelarCadVendedor.Click += new System.EventHandler(this.btnCancelarCadVendedor_Click_1);
             // 
             // btnSalvarCadVendedor
             // 
@@ -62,6 +63,7 @@
             this.btnSalvarCadVendedor.TabIndex = 40;
             this.btnSalvarCadVendedor.Text = "Salvar";
             this.btnSalvarCadVendedor.UseVisualStyleBackColor = true;
+            this.btnSalvarCadVendedor.Click += new System.EventHandler(this.btnSalvarCadVendedor_Click_1);
             // 
             // txtIdadeCadVendedor
             // 

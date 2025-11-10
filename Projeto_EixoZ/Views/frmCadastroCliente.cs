@@ -41,8 +41,6 @@ namespace Projeto_EixoZ.Views
                     DesativarCampos();
                     break;
             }
-
-
         }
         void DesativarCampos()
         {
@@ -71,9 +69,8 @@ namespace Projeto_EixoZ.Views
             txtIdadeCadCliente.Text = cliente.Idade.ToString();
         }
 
-        private void btnSalvarCadCliente_Click(object sender, EventArgs e)
+        private void btnSalvarCadCliente_Click_1(object sender, EventArgs e)
         {
-
             Cliente cliente = new Cliente();
 
             cliente.Nome = txtNomeCadCliente.Text;
@@ -106,7 +103,7 @@ namespace Projeto_EixoZ.Views
                     MessageBoxIcon.Warning);
         }
 
-        private void btnCancelarCadCliente_Click(object sender, EventArgs e)
+        private void btnCancelarCadCliente_Click_1(object sender, EventArgs e)
         {
             if (btnSalvarCadCliente.Visible == false)
             {

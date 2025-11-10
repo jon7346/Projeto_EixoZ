@@ -149,6 +149,7 @@
             this.btnSalvarCadCliente.TabIndex = 12;
             this.btnSalvarCadCliente.Text = "Salvar";
             this.btnSalvarCadCliente.UseVisualStyleBackColor = true;
+            this.btnSalvarCadCliente.Click += new System.EventHandler(this.btnSalvarCadCliente_Click_1);
             // 
             // btnCancelarCadCliente
             // 
@@ -158,6 +159,7 @@
             this.btnCancelarCadCliente.TabIndex = 13;
             this.btnCancelarCadCliente.Text = "Cancelar";
             this.btnCancelarCadCliente.UseVisualStyleBackColor = true;
+            this.btnCancelarCadCliente.Click += new System.EventHandler(this.btnCancelarCadCliente_Click_1);
             // 
             // frmCadastroCliente
             // 
