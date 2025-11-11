@@ -71,36 +71,59 @@ namespace Projeto_EixoZ.Views
 
         private void btnSalvarCadCliente_Click_1(object sender, EventArgs e)
         {
-            Cliente cliente = new Cliente();
-
-            cliente.Nome = txtNomeCadCliente.Text;
-            cliente.Email = txtEmailCadCliente.Text;
-            cliente.Senha = txtSenhaCadCliente.Text;
-
-            int retorno = 0;
-            if (txtIDCadCliente.Text == "")
-                retorno = clienteController.Inserir(cliente);
-            else
+            try
             {
+                Cliente cliente = new Cliente();
+                cliente.Nome = txtNomeCadCliente.Text;
+                cliente.Email = txtEmailCadCliente.Text;
+                cliente.Senha = txtSenhaCadCliente.Text;
+                cliente.Endereco = txtEnderecoCadCliente.Text;
 
-                cliente.ClienteId = int.Parse(txtIDCadCliente.Text);
-                retorno = clienteController.Alterar(cliente);
+                if (!int.TryParse(txtIdadeCadCliente.Text, out int idade))
+                {
+                    MessageBox.Show("Por favor, insira uma idade válida.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return; // Para a execução
+                }
+                cliente.Idade = idade;
+
+                int retorno = 0;
+                if (txtIDCadCliente.Text == "")
+                {
+                    retorno = clienteController.Inserir(cliente);
+                }
+                else
+                {
+                    cliente.ClienteId = int.Parse(txtIDCadCliente.Text);
+                    retorno = clienteController.Alterar(cliente);
+                }
+
+                if (retorno > 0)
+                {
+                    MessageBox.Show(
+                        "Cadastro salvo com sucesso!",
+                        "Informação!", MessageBoxButtons.OK,
+                        MessageBoxIcon.Information);
+
+                    DialogResult = DialogResult.OK;
+                }
+                else
+                {
+                    MessageBox.Show(
+                        "Falha ao salvar o cadastro!",
+                        "Atenção!", MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
+                }
             }
-
-            if (retorno > 0)
+            catch (Exception ex)
             {
+                // ISSO AQUI É O MAIS IMPORTANTE:
+                // Se qualquer erro acontecer (Typo, Banco, int.Parse), ele será exibido
                 MessageBox.Show(
-                    "Cadastro salvo com sucesso!",
-                    "Informação!", MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
-
-                DialogResult = DialogResult.OK;
+                    "Ocorreu um erro: " + ex.Message + "\n\nDetalhes: " + ex.ToString(),
+                    "Erro Crítico",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
             }
-            else
-                MessageBox.Show(
-                    "Falha ao salvar o cadastro!",
-                    "Atenção!", MessageBoxButtons.OK,
-                    MessageBoxIcon.Warning);
         }
 
         private void btnCancelarCadCliente_Click_1(object sender, EventArgs e)

@@ -71,37 +71,62 @@ namespace Projeto_EixoZ.Views
         }
         private void btnSalvarCadVendedor_Click_1(object sender, EventArgs e)
         {
-            Vendedor vendedor = new Vendedor();
-
-            vendedor.Nome = txtNomeCadVendedor.Text;
-            vendedor.Email = txtEmailCadVendedor.Text;
-            vendedor.Senha = txtSenhaCadVendedor.Text;
-
-            int retorno = 0;
-            if (txtIDCadVendedor.Text == "")
-                retorno = vendedorController.Inserir(vendedor);
-            else
+            try
             {
+                Vendedor vendedor = new Vendedor();
 
-                vendedor.IdVendedor = int.Parse(txtIDCadVendedor.Text);
-                retorno = vendedorController.Alterar(vendedor);
+                vendedor.Nome = txtNomeCadVendedor.Text;
+                vendedor.Email = txtEmailCadVendedor.Text;
+                vendedor.Senha = txtSenhaCadVendedor.Text;
+
+                // 2. CORREÇÃO: Dados que estavam faltando
+                vendedor.Endereco = txtEnderecoCadVendedor.Text;
+
+                // Validação de segurança para a Idade
+                if (!int.TryParse(txtIdadeCadVendedor.Text, out int idade))
+                {
+                    MessageBox.Show("Por favor, insira uma idade válida.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                vendedor.Idade = idade;
+
+                // A lógica de Inserir/Alterar que você usou está correta
+                int retorno = 0;
+                if (txtIDCadVendedor.Text == "")
+                    retorno = vendedorController.Inserir(vendedor);
+                else
+                {
+                    vendedor.IdVendedor = int.Parse(txtIDCadVendedor.Text);
+                    retorno = vendedorController.Alterar(vendedor);
+                }
+
+                if (retorno > 0)
+                {
+                    MessageBox.Show(
+                        "Cadastro salvo com sucesso!",
+                        "Informação!", MessageBoxButtons.OK,
+                        MessageBoxIcon.Information);
+
+                    DialogResult = DialogResult.OK;
+                }
+                else
+                    MessageBox.Show(
+                        "Falha ao salvar o cadastro!",
+                        "Atenção!", MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
             }
-
-            if (retorno > 0)
+            catch (Exception ex)
             {
+                // 3. A rede de segurança que pega qualquer erro
                 MessageBox.Show(
-                    "Cadastro salvo com sucesso!",
-                    "Informação!", MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
-
-                DialogResult = DialogResult.OK;
+                    "Ocorreu um erro: " + ex.Message + "\n\nDetalhes: " + ex.ToString(),
+                    "Erro Crítico",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
             }
-            else
-                MessageBox.Show(
-                    "Falha ao salvar o cadastro!",
-                    "Atenção!", MessageBoxButtons.OK,
-                    MessageBoxIcon.Warning);
         }
+        
+        
 
         private void btnCancelarCadVendedor_Click_1(object sender, EventArgs e)
         {

@@ -52,7 +52,7 @@ namespace Projeto_EixoZ.Controllers
             command.Parameters.AddWithValue("@MeioDeTransporte", transportadora.MeioDeTransporte);
             command.Parameters.AddWithValue("@PrecoMedio", transportadora.PrecoMedio);
             command.Parameters.AddWithValue("@Observacao", transportadora.Observacao);
-            command.Parameters.AddWithValue("@IdTransportadora", transportadora.IdTranportadora);
+            command.Parameters.AddWithValue("@IdTransportadora", transportadora.IdTransportadora);
             //Executando o comando SQL e retornando
             //a quantidade de linhas afetadas
             return dataBase.ExecuteSQL(command);
@@ -99,7 +99,7 @@ namespace Projeto_EixoZ.Controllers
                 //e atribuir ao objeto
                 //Todo dado precisa ser convertido
                 //do SQL Server para C#
-                transportadora.IdTranportadora = (int)dataTable.Rows[0]["IdTranportadora"];
+                transportadora.IdTransportadora = (int)dataTable.Rows[0]["IdTranportadora"];
                 transportadora.NomeFantasia = (string)dataTable.Rows[0]["NomeFantasia"];
                 transportadora.MeioDeTransporte = (string)dataTable.Rows[0]["MeioDeTransporte"];
                 transportadora.PrecoMedio = (decimal)dataTable.Rows[0]["PrecoMedio"];
@@ -122,9 +122,9 @@ namespace Projeto_EixoZ.Controllers
 
             //Validar se o filtro foi passado no parametro
             if (filtro != "")
-                query += "WHERE @filtro ";
+                query += " WHERE " + filtro; 
 
-            query += "ORDER BY NomeFantasia";
+            query += " ORDER BY NomeFantasia";
 
             SqlCommand command = new SqlCommand(query);
 
@@ -143,7 +143,7 @@ namespace Projeto_EixoZ.Controllers
                 //e atribuir ao objeto
                 //Todo dado precisa ser convertido
                 //do SQL Server para C#
-                transportadora.IdTranportadora = (int)row["IdTranportadora"];
+                transportadora.IdTransportadora = (int)row["IdTranportadora"];
                 transportadora.NomeFantasia = (string)row["NomeFantasia"];
                 transportadora.MeioDeTransporte = (string)row["MeioDeTransporte"];
                 transportadora.PrecoMedio = (decimal)row["PrecoMedio"];

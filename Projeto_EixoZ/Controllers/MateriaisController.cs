@@ -12,9 +12,6 @@ namespace Projeto_EixoZ.Controllers
 {
     class MateriaisController
     {
-        
-     
-
             DataBaseServices dataBase = new DataBaseServices();
 
             public int Inserir(Materiais material)
@@ -47,7 +44,7 @@ namespace Projeto_EixoZ.Controllers
                     "MateriaPrima = @MateriaPrima, " +
                     "NomeFornecedor = @NomeFornecedor, " +
                     "PesoProduto = @PesoProduto, " +
-                    "Tipo = @Tipo " +
+                    "Tipo = @Tipo, " +
                     "Marca = @Marca " +
                     "WHERE IdMaterial = @IdMaterial";
 
@@ -74,7 +71,7 @@ namespace Projeto_EixoZ.Controllers
                     "WHERE IdMaterial = @IdMaterial";
                 SqlCommand command = new SqlCommand(query);
                 //Definindo os valores dos parametros
-                command.Parameters.AddWithValue("@idMaterial", idmaterial);
+                command.Parameters.AddWithValue("@IdMaterial", idmaterial);
                 //Executando o comando SQL e retornando
                 //a quantidade de linhas afetadas
                 return dataBase.ExecuteSQL(command);
@@ -123,19 +120,18 @@ namespace Projeto_EixoZ.Controllers
             //Adicionado opção de filtro apenas para não ter q repetir código
             public MateriaisCollection GetByFilter(string filtro = "")
             {
-                //Criando o comando SQL para selecionar
-                //todos os registros na tabela de clientes
-                string query = "SELECT * FROM material ";
+            //Criando o comando SQL para selecionar
+            //todos os registros na tabela de clientes
+            string query = "SELECT * FROM material ";
 
-                //Validar se o filtro foi passado no parametro
-                if (filtro != "")
-                    query += "WHERE @filtro ";
+            if (filtro != "")
+                query += " WHERE " + filtro; // Concatena o filtro direto na query
 
-                query += "ORDER BY NomeFornecedor";
+            query += " ORDER BY NomeFornecedor";
 
-                SqlCommand command = new SqlCommand(query);
+            SqlCommand command = new SqlCommand(query);
 
-                command.Parameters.AddWithValue("@filtro", filtro);
+            command.Parameters.AddWithValue("@filtro", filtro);
                 //Executando o comando SQL e armazenando o resultado
                 //em um objeto do tipo DataTable
                 DataTable dataTable = dataBase.GetDataTable(command);

@@ -30,7 +30,7 @@ namespace Projeto_EixoZ.Controllers
             command.Parameters.AddWithValue("@Idade", cliente.Idade);
             command.Parameters.AddWithValue("@Email", cliente.Email);
             command.Parameters.AddWithValue("@Senha", cliente.Senha);
-            command.Parameters.AddWithValue("@Enderco", cliente.Endereco);
+            command.Parameters.AddWithValue("@Endereco", cliente.Endereco);
             //Executando o comando SQL e retornando
             //a quantidade de linhas afetadas
             return dataBase.ExecuteSQL(command);
@@ -46,7 +46,7 @@ namespace Projeto_EixoZ.Controllers
                 "Nome = @Nome, " +
                 "Idade = @Idade, " +
                 "Email = @Email, " +
-                "Senha = @Senha " +
+                "Senha = @Senha, " +
                 "Endereco = @Endereco " +
                 "WHERE IdCliente = @IdCliente";
 
@@ -190,7 +190,7 @@ namespace Projeto_EixoZ.Controllers
         
             public ClienteCollection GetByIdade(string value)
         {
-            return GetByFilter("Idade LIKE '%" + value + "%'");
+            return GetByFilter("Idade = " + value);
         }
 
     }  

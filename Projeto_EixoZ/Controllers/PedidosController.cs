@@ -46,8 +46,8 @@ namespace Projeto_EixoZ.Controllers
                 "IdCliente = @IdCliente, " +
                 "IdTransportadora = @IdTransportadora, " +
                 "EnderecoEntrega = @EnderecoEntrega, " +
-                "DataPedido = @DataPedidoDataPedido " +
-                "StatusPedido = @StatusPedido " +
+                "DataPedido = @DataPedido, " +       
+                "StatusPedido = @StatusPedido, " + 
                 "Observacao = @Observacao " +
                 "WHERE IdPedido = @IdPedido";
 
@@ -73,7 +73,7 @@ namespace Projeto_EixoZ.Controllers
             //um registro na tabela de clientes
             string query =
                 "DELETE FROM PEDIDOS " +
-                "WHERE IdProduto = @IdPedido";
+                "WHERE IdPedido = @IdPedido";
             SqlCommand command = new SqlCommand(query);
             //Definindo os valores dos parametros
             command.Parameters.AddWithValue("@IdPedido", pedidoId);
@@ -90,7 +90,7 @@ namespace Projeto_EixoZ.Controllers
             string query =
                 "SELECT * " +
                 "FROM PEDIDOS " +
-                "WHERE IdProduto = @IdPedido" +
+                "WHERE IdPedido = @IdPedido" +
                 "ORDER BY DataPedido";
             SqlCommand command = new SqlCommand(query);
             //Definindo os valores dos parametros
@@ -132,9 +132,9 @@ namespace Projeto_EixoZ.Controllers
 
             //Validar se o filtro foi passado no parametro
             if (filtro != "")
-                query += "WHERE @filtro ";
+                query += " WHERE " + filtro;
 
-            query += "ORDER BY DataPedido";
+            query += " ORDER BY DataPedido";
 
             SqlCommand command = new SqlCommand(query);
 

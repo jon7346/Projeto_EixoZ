@@ -8,7 +8,7 @@ namespace Projeto_EixoZ.Models
 {
     public class Transportadora
     {
-        public int IdTranportadora { get; set; }
+        public int IdTransportadora { get; set; }
 
         public string NomeFantasia { get; set; }
 

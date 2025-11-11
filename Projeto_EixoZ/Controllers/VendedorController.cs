@@ -28,7 +28,7 @@ namespace Projeto_EixoZ.Controllers
             command.Parameters.AddWithValue("@Idade", vendedor.Idade);
             command.Parameters.AddWithValue("@Email", vendedor.Email);
             command.Parameters.AddWithValue("@Senha", vendedor.Senha);
-            command.Parameters.AddWithValue("@Enderco", vendedor.Endereco);
+            command.Parameters.AddWithValue("@Endereco", vendedor.Endereco);
             //Executando o comando SQL e retornando
             //a quantidade de linhas afetadas
             return dataBase.ExecuteSQL(command);
@@ -44,7 +44,7 @@ namespace Projeto_EixoZ.Controllers
                 "Nome = @Nome, " +
                 "Idade = @Idade, " +
                 "Email = @Email, " +
-                "Senha = @Senha " +
+                "Senha = @Senha, " +
                 "Endereco = @Endereco " +
                 "WHERE IdVendedor = @IdVendedor";
 
@@ -54,7 +54,7 @@ namespace Projeto_EixoZ.Controllers
             command.Parameters.AddWithValue("@Idade", vendedor.Idade);
             command.Parameters.AddWithValue("@Email", vendedor.Email);
             command.Parameters.AddWithValue("@Senha", vendedor.Senha);
-            command.Parameters.AddWithValue("@Enderco", vendedor.Endereco);
+            command.Parameters.AddWithValue("@Endereco", vendedor.Endereco);
             command.Parameters.AddWithValue("@IdVendedor", vendedor.IdVendedor);
             //Executando o comando SQL e retornando
             //a quantidade de linhas afetadas
@@ -71,7 +71,7 @@ namespace Projeto_EixoZ.Controllers
                 "WHERE IdVendedor = @IdVendedor";
             SqlCommand command = new SqlCommand(query);
             //Definindo os valores dos parametros
-            command.Parameters.AddWithValue("@IdCliente", idVendedor);
+            command.Parameters.AddWithValue("@IdVendedor", idVendedor);
             //Executando o comando SQL e retornando
             //a quantidade de linhas afetadas
             return dataBase.ExecuteSQL(command);
@@ -98,15 +98,11 @@ namespace Projeto_EixoZ.Controllers
             {
                 //Criando um novo objeto do tipo vendedor
                 Vendedor vendedor = new Vendedor();
-                // Agora vou indetificar o valor da linha na coluna
-                //e atribuir ao objeto
-                //Todo dado precisa ser convertido
-                //do SQL Server para C#
-                vendedor.IdVendedor = (int)dataTable.Rows[0]["idVendedor"];
+                vendedor.IdVendedor = (int)dataTable.Rows[0]["IdVendedor"]; // "IdVendedor"
                 vendedor.Nome = (string)dataTable.Rows[0]["Nome"];
                 vendedor.Idade = (int)dataTable.Rows[0]["Idade"];
-                vendedor.Email = (string)dataTable.Rows[0]["Email"];
-                vendedor.Senha = (string)dataTable.Rows[0]["Senha"];
+                vendedor.Email = (string)dataTable.Rows[0]["Email"];     // "Email"
+                vendedor.Senha = (string)dataTable.Rows[0]["Senha"];     // "Senha"
                 vendedor.Endereco = (string)dataTable.Rows[0]["Endereco"];
 
                 return vendedor;
@@ -116,8 +112,6 @@ namespace Projeto_EixoZ.Controllers
 
         }
 
-        //Método publico que retorna uma coleção de Clientes com filtro
-        //Adicionado opção de filtro apenas para não ter q repetir código
         public VendedorCollection GetByFilter(string filtro = "")
         {
             //Criando o comando SQL para selecionar
@@ -126,7 +120,9 @@ namespace Projeto_EixoZ.Controllers
 
             //Validar se o filtro foi passado no parametro
             if (filtro != "")
-                query += "WHERE @filtro ";
+                query += " WHERE " + filtro; 
+            else
+                query += " "; 
 
             query += "ORDER BY Nome";
 
@@ -147,11 +143,11 @@ namespace Projeto_EixoZ.Controllers
                 //e atribuir ao objeto
                 //Todo dado precisa ser convertido
                 //do SQL Server para C#
-                vendedor.IdVendedor = (int)row["idVendedor"];
+                vendedor.IdVendedor = (int)row["IdVendedor"]; // "IdVendedor"
                 vendedor.Nome = (string)row["Nome"];
                 vendedor.Idade = (int)row["Idade"];
-                vendedor.Email = (string)row["email"];
-                vendedor.Senha = (string)row["senha"];
+                vendedor.Email = (string)row["Email"];     // "Email"
+                vendedor.Senha = (string)row["Senha"];     // "Senha"
                 vendedor.Endereco = (string)row["Endereco"];
                 //Adicionando o objeto vendedor na coleção
                 Vendedores.Add(vendedor);

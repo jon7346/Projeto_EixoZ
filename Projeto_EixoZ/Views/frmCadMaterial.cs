@@ -71,48 +71,67 @@ namespace Projeto_EixoZ.Views
 
         private void btnSalvarCadProd_Click_1(object sender, EventArgs e)
         {
-            // Validação dos campos obrigatórios
-            // Verifica se os campos obrigatórios estão preenchidos
-            if (string.IsNullOrWhiteSpace(txtNomeCadMaterial.Text) ||
+            try
+            {
+                // Validação dos campos obrigatórios
+                // Verifica se os campos obrigatórios estão preenchidos
+                if (string.IsNullOrWhiteSpace(txtNomeCadMaterial.Text) ||
                 string.IsNullOrWhiteSpace(txtMtlCadMaterial.Text) ||
                 cbxTipo.SelectedItem == null ||
                 cbxMarca.SelectedItem == null)
-            {
-                MessageBox.Show("Preencha todos os campos obrigatórios!");
-                return;
+                {
+                    MessageBox.Show("Preencha todos os campos obrigatórios!");
+                    return;
+                }
+
+                // Tenta converter o peso para decimal
+                // Se a conversão falhar, exibe uma mensagem de erro
+                if (!decimal.TryParse(txtPesoCadMaterial.Text, out decimal peso))
+                {
+                    MessageBox.Show("Peso inválido. Digite um valor numérico.");
+                    return;
+                } 
+
+                Materiais materiais = new Materiais
+                {
+                    NomeFornecedor = txtNomeCadMaterial.Text,
+                    MateriaPrima = txtMtlCadMaterial.Text,
+                    PesoProduto = peso,
+                    Tipo = cbxTipo.SelectedItem.ToString(),
+                    Marca = cbxMarca.SelectedItem.ToString()
+                };
+
+                int resultado;
+                if (string.IsNullOrEmpty(txtIDCadMaterial.Text))
+                {
+                    // Se o ID está vazio, é um INSERT
+                    resultado = materiaisController.Inserir(materiais);
+                }
+                else
+                {
+                    // Se o ID tem valor, é um UPDATE
+                    materiais.IdMaterial = int.Parse(txtIDCadMaterial.Text); 
+                    resultado = materiaisController.Alterar(materiais);
+                }
+
+                if (resultado > 0)
+                {
+                    MessageBox.Show("Pedido salvo com sucesso!");
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Erro ao salvar pedido.");
+                }
             }
-
-            // Tenta converter o peso para decimal
-            // Se a conversão falhar, exibe uma mensagem de erro
-            if (!decimal.TryParse(txtPesoCadMaterial.Text, out decimal peso))
+            catch (Exception ex)
             {
-                MessageBox.Show("Peso inválido. Digite um valor numérico.");
-                return;
-            } // Atribui o peso convertido -->
-
-            Materiais materiais = new Materiais
-            {
-                NomeFornecedor = txtNomeCadMaterial.Text,
-                MateriaPrima = txtMtlCadMaterial.Text,
-                PesoProduto = peso, // Atribui o peso convertido <--
-                Tipo = cbxTipo.SelectedItem.ToString(),
-                Marca = cbxMarca.SelectedItem.ToString()
-            };
-
-            int resultado;
-            if (materiais.IdMaterial == 0)
-                resultado = materiaisController.Inserir(materiais);
-            else
-                resultado = materiaisController.Alterar(materiais);
-
-            if (resultado > 0)
-            {
-                MessageBox.Show("Pedido salvo com sucesso!");
-                this.Close();
-            }
-            else
-            {
-                MessageBox.Show("Erro ao salvar pedido.");
+                // A rede de segurança que pega qualquer erro
+                MessageBox.Show(
+                    "Ocorreu um erro: " + ex.Message + "\n\nDetalhes: " + ex.ToString(),
+                    "Erro Crítico",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
             }
         }
 

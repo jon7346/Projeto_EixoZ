@@ -21,7 +21,7 @@ namespace Projeto_EixoZ.Services
             //Nome do banco de dados
             //Autenticação (Usuario e Senha ou Autenticação do Windows)
             connection.ConnectionString =
-                "Data Source=.\\MSSQLSERVER01;" +
+                "Data Source=MAKER\\SQLEXPRESS;" +
                 "Initial Catalog=EixoZ;" +
                 "Integrated Security=SSPI;";
 

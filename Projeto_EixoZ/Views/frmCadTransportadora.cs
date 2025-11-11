@@ -57,7 +57,7 @@ namespace Projeto_EixoZ.Views
         void CarregarDados(Transportadora transportadora)
         {
             // Preenche os campos com os dados do material
-            txtIDCadTransp.Text = transportadora.IdTranportadora.ToString();
+            txtIDCadTransp.Text = transportadora.IdTransportadora.ToString();
             txtNomeCadTransp.Text = transportadora.NomeFantasia;
             txtPrecoCadTransp.Text = transportadora.PrecoMedio.ToString();
             txtObsCadTransp.Text = transportadora.Observacao;
@@ -65,44 +65,63 @@ namespace Projeto_EixoZ.Views
 
         private void btnSalvarCadTransp_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtNomeCadTransp.Text) ||
+            try
+            {
+                if (string.IsNullOrWhiteSpace(txtNomeCadTransp.Text) ||
                 string.IsNullOrWhiteSpace(txtPrecoCadTransp.Text) ||
                 string.IsNullOrWhiteSpace(txtMeioCadTransp.Text))
-            {
-                MessageBox.Show("Preencha todos os campos obrigatórios!");
-                return;
+                {
+                    MessageBox.Show("Preencha todos os campos obrigatórios!");
+                    return;
+                }
+
+                // Tenta converter o preco para decimal
+                // Se a conversão falhar, exibe uma mensagem de erro
+                if (!decimal.TryParse(txtPrecoCadTransp.Text, out decimal preco))
+                {
+                    MessageBox.Show("Preço inválido. Digite um valor numérico.");
+                    return;
+                } // Atribui o preço convertido -->
+
+                Transportadora transportadora = new Transportadora
+                {
+                    NomeFantasia = txtNomeCadTransp.Text,
+                    PrecoMedio = preco, // Atribui o preço convertido <--
+                    MeioDeTransporte = txtMeioCadTransp.Text,
+                    Observacao = txtObsCadTransp.Text
+                };
+
+                int resultado;
+                if (string.IsNullOrEmpty(txtIDCadTransp.Text))
+                {
+                    // Vazio = Inserir
+                    resultado = transportadoraController.Inserir(transportadora);
+                }
+                else
+                {
+                    // Preenchido = Alterar
+                    transportadora.IdTransportadora = int.Parse(txtIDCadTransp.Text);
+                    resultado = transportadoraController.Alterar(transportadora);
+                }
+
+                if (resultado > 0)
+                {
+                    MessageBox.Show("Pedido salvo com sucesso!");
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Erro ao salvar pedido.");
+                }
             }
-
-            // Tenta converter o preco para decimal
-            // Se a conversão falhar, exibe uma mensagem de erro
-            if (!decimal.TryParse(txtPrecoCadTransp.Text, out decimal preco))
+            catch (Exception ex)
             {
-                MessageBox.Show("Preço inválido. Digite um valor numérico.");
-                return;
-            } // Atribui o preço convertido -->
-
-            Transportadora transportadora = new Transportadora
-            {
-                NomeFantasia = txtNomeCadTransp.Text,
-                PrecoMedio = preco, // Atribui o preço convertido <--
-                MeioDeTransporte = txtMeioCadTransp.Text,
-                Observacao = txtObsCadTransp.Text
-            };
-
-            int resultado;
-            if (transportadora.IdTranportadora == 0)
-                resultado = transportadoraController.Inserir(transportadora);
-            else
-                resultado = transportadoraController.Alterar(transportadora);
-
-            if (resultado > 0)
-            {
-                MessageBox.Show("Pedido salvo com sucesso!");
-                this.Close();
-            }
-            else
-            {
-                MessageBox.Show("Erro ao salvar pedido.");
+                // A rede de segurança
+                MessageBox.Show(
+                    "Ocorreu um erro: " + ex.Message + "\n\nDetalhes: " + ex.ToString(),
+                    "Erro Crítico",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
             }
         }
 
