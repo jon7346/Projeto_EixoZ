@@ -32,6 +32,7 @@ namespace Projeto_EixoZ.Views
             {
                 case 1:
                     this.Text = "Cadastrar Cliente";
+                    txtId.ReadOnly = true;
                     break;
                 case 2:
                     this.Text = "Editar Cliente";
@@ -45,12 +46,12 @@ namespace Projeto_EixoZ.Views
         void DesativarCampos()
         {
             // Desativa os campos para visualização apenas
-            txtIDCadCliente.ReadOnly = true;
+            txtIdadeCliente.ReadOnly = true;
             txtNomeCadCliente.ReadOnly = true;
             txtEmailCadCliente.ReadOnly = true;
             txtSenhaCadCliente.ReadOnly = true;
             txtEnderecoCadCliente.ReadOnly = true;
-            txtIdadeCadCliente.ReadOnly = true;
+            txtId.ReadOnly = true;
 
             // Oculta os botões de salvar e limpar
             btnSalvarCadCliente.Visible = false;
@@ -61,12 +62,12 @@ namespace Projeto_EixoZ.Views
         void CarregarDados(Cliente cliente)
         {
             //carrega os dados que forem inseridos nos campos de cliente
-            txtIDCadCliente.Text = cliente.ClienteId.ToString();
+            txtIdadeCliente.Text = cliente.Idade.ToString();
             txtNomeCadCliente.Text = cliente.Nome.ToString();
             txtEmailCadCliente.Text = cliente.Email.ToString();
             txtSenhaCadCliente.Text = cliente.Senha.ToString();
             txtEnderecoCadCliente.Text = cliente.Endereco.ToString();
-            txtIdadeCadCliente.Text = cliente.Idade.ToString();
+            txtId.Text =  cliente.ClienteId.ToString();
         }
 
         private void btnSalvarCadCliente_Click_1(object sender, EventArgs e)
@@ -79,7 +80,7 @@ namespace Projeto_EixoZ.Views
                 cliente.Senha = txtSenhaCadCliente.Text;
                 cliente.Endereco = txtEnderecoCadCliente.Text;
 
-                if (!int.TryParse(txtIdadeCadCliente.Text, out int idade))
+                if (!int.TryParse(txtIdadeCliente.Text, out int idade))
                 {
                     MessageBox.Show("Por favor, insira uma idade válida.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return; // Para a execução
@@ -87,13 +88,13 @@ namespace Projeto_EixoZ.Views
                 cliente.Idade = idade;
 
                 int retorno = 0;
-                if (txtIDCadCliente.Text == "")
+                if (txtId.Text == "")
                 {
                     retorno = clienteController.Inserir(cliente);
                 }
                 else
                 {
-                    cliente.ClienteId = int.Parse(txtIDCadCliente.Text);
+                    cliente.ClienteId = int.Parse(txtId.Text);
                     retorno = clienteController.Alterar(cliente);
                 }
 

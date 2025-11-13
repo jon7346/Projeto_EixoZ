@@ -90,7 +90,7 @@ namespace Projeto_EixoZ.Controllers
             string query =
                 "SELECT * " +
                 "FROM PEDIDOS " +
-                "WHERE IdPedido = @IdPedido" +
+                "WHERE IdPedido = @IdPedido " +
                 "ORDER BY DataPedido";
             SqlCommand command = new SqlCommand(query);
             //Definindo os valores dos parametros

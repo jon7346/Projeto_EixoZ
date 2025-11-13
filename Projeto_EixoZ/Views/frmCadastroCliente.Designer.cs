@@ -35,12 +35,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtIDCadCliente = new System.Windows.Forms.TextBox();
+            this.txtIdadeCliente = new System.Windows.Forms.TextBox();
             this.txtNomeCadCliente = new System.Windows.Forms.TextBox();
             this.txtEmailCadCliente = new System.Windows.Forms.TextBox();
             this.txtSenhaCadCliente = new System.Windows.Forms.TextBox();
             this.txtEnderecoCadCliente = new System.Windows.Forms.TextBox();
-            this.txtIdadeCadCliente = new System.Windows.Forms.TextBox();
+            this.txtId = new System.Windows.Forms.TextBox();
             this.btnSalvarCadCliente = new System.Windows.Forms.Button();
             this.btnCancelarCadCliente = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -116,14 +116,14 @@
             this.label6.TabIndex = 5;
             this.label6.Text = "Idade:";
             // 
-            // txtIDCadCliente
+            // txtIdadeCliente
             // 
-            this.txtIDCadCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIDCadCliente.Location = new System.Drawing.Point(755, 58);
-            this.txtIDCadCliente.Multiline = true;
-            this.txtIDCadCliente.Name = "txtIDCadCliente";
-            this.txtIDCadCliente.Size = new System.Drawing.Size(44, 37);
-            this.txtIDCadCliente.TabIndex = 6;
+            this.txtIdadeCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdadeCliente.Location = new System.Drawing.Point(755, 58);
+            this.txtIdadeCliente.Multiline = true;
+            this.txtIdadeCliente.Name = "txtIdadeCliente";
+            this.txtIdadeCliente.Size = new System.Drawing.Size(44, 37);
+            this.txtIdadeCliente.TabIndex = 6;
             // 
             // txtNomeCadCliente
             // 
@@ -162,14 +162,14 @@
             this.txtEnderecoCadCliente.Size = new System.Drawing.Size(714, 37);
             this.txtEnderecoCadCliente.TabIndex = 10;
             // 
-            // txtIdadeCadCliente
+            // txtId
             // 
-            this.txtIdadeCadCliente.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdadeCadCliente.Location = new System.Drawing.Point(13, 58);
-            this.txtIdadeCadCliente.Multiline = true;
-            this.txtIdadeCadCliente.Name = "txtIdadeCadCliente";
-            this.txtIdadeCadCliente.Size = new System.Drawing.Size(71, 37);
-            this.txtIdadeCadCliente.TabIndex = 11;
+            this.txtId.Font = new System.Drawing.Font("Microsoft YaHei", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtId.Location = new System.Drawing.Point(13, 58);
+            this.txtId.Multiline = true;
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(71, 37);
+            this.txtId.TabIndex = 11;
             // 
             // btnSalvarCadCliente
             // 
@@ -212,8 +212,8 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.txtIDCadCliente);
-            this.groupBox2.Controls.Add(this.txtIdadeCadCliente);
+            this.groupBox2.Controls.Add(this.txtIdadeCliente);
+            this.groupBox2.Controls.Add(this.txtId);
             this.groupBox2.Controls.Add(this.txtEnderecoCadCliente);
             this.groupBox2.Controls.Add(this.txtNomeCadCliente);
             this.groupBox2.Controls.Add(this.label5);
@@ -259,12 +259,12 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtIDCadCliente;
+        private System.Windows.Forms.TextBox txtIdadeCliente;
         private System.Windows.Forms.TextBox txtNomeCadCliente;
         private System.Windows.Forms.TextBox txtEmailCadCliente;
         private System.Windows.Forms.TextBox txtSenhaCadCliente;
         private System.Windows.Forms.TextBox txtEnderecoCadCliente;
-        private System.Windows.Forms.TextBox txtIdadeCadCliente;
+        private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Button btnSalvarCadCliente;
         private System.Windows.Forms.Button btnCancelarCadCliente;
         private System.Windows.Forms.GroupBox groupBox1;

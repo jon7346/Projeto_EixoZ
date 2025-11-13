@@ -85,7 +85,7 @@ namespace Projeto_EixoZ.Controllers
                 string query =
                     "SELECT * " +
                     "FROM material " +
-                    "WHERE IdMaterial = @IdMaterial" +
+                    "WHERE IdMaterial = @IdMaterial " +
                     "ORDER BY NomeFornecedor";
                 SqlCommand command = new SqlCommand(query);
                 //Definindo os valores dos parametros

@@ -15,18 +15,34 @@ namespace Projeto_EixoZ.Services
             //Variavel q ira armazenar a conexão
             SqlConnection connection = new SqlConnection();
 
+            string nomeComputador = System.Environment.MachineName;
+
             //Definindo a string de conexão
             //Dados para conectar co o servidor
             //Precisamos do Host (Nome/IP)
             //Nome do banco de dados
             //Autenticação (Usuario e Senha ou Autenticação do Windows)
-            connection.ConnectionString =
-                "Data Source=MAKER\\SQLEXPRESS;" +
-                "Initial Catalog=EixoZ;" +
-                "Integrated Security=SSPI;";
+          
 
             //Método para abrir a conexão
-            connection.Open();
+            if(nomeComputador == "JONATHANBOOK4")
+            {
+                connection.ConnectionString =
+                "Data Source=.\\MSSQLSERVER01;" +
+                "Initial Catalog=EixoZ;" +
+                "Integrated Security=SSPI;";
+                connection.Open();
+                
+            }
+            else
+            {
+                connection.ConnectionString =
+                "Data Source=.\\SQLEXPRESS;" +
+                "Initial Catalog=EixoZ;" +
+                "Integrated Security=SSPI;";
+                connection.Open();
+            }
+                ;
             //Retornando a conexão aberta
             return connection;
         }

@@ -33,6 +33,7 @@ namespace Projeto_EixoZ.Views
             {
                 case 1:
                     this.Text = "Cadastrar Pedido";
+                    txtIDCadPedido.ReadOnly = true;
                     break;
                 case 2:
                     this.Text = "Editar Pedido";
@@ -86,11 +87,7 @@ namespace Projeto_EixoZ.Views
                     return;
                 }
 
-                if (!int.TryParse(txtIDCadPedido.Text, out int IdPedido))
-                {
-                    MessageBox.Show("ID Pedido inválido!");
-                    return;
-                }
+             
                 // Conversão segura dos tipos de dados
                 if (!int.TryParse(txtIDCliente.Text, out int idCliente))
                 {

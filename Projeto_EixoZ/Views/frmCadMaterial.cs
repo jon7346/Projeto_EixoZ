@@ -30,6 +30,7 @@ namespace Projeto_EixoZ.Views
             {
                 case 1:
                     this.Text = "Cadastrar Material"; // Título para cadastro
+                    txtIDCadMaterial.ReadOnly = true;
                     break;
                 case 2:
                     this.Text = "Editar Material"; // Título para edição

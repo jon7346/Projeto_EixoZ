@@ -85,7 +85,7 @@ namespace Projeto_EixoZ.Controllers
             string query =
                 "SELECT * " +
                 "FROM vendedor " +
-                "WHERE IdVendedor = @IdVendedor" +
+                "WHERE IdVendedor = @IdVendedor " +
                 "ORDER BY Nome";
             SqlCommand command = new SqlCommand(query);
             //Definindo os valores dos parametros

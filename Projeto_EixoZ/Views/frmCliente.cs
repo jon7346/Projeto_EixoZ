@@ -33,37 +33,36 @@ namespace Projeto_EixoZ.Views
             {
                 dgvDadosRetornados.DataSource = null;
 
+                
+                
                 if (CBSelec.Text == "")
+
                 {
-                    dgvDadosRetornados.DataSource = CLI.GetAll();
+                        dgvDadosRetornados.DataSource = CLI.GetAll();
+                        MessageBox.Show("Retornando todos os dados! Caso queria, por favor selecione um campo para pesquisa !");
                 }
+               
                 else
                 {
                     switch (CBSelec.SelectedIndex)
                     {
                         //Id
                         case 0:
-                            if (int.TryParse(texto, out int id))
+                            if (!string.IsNullOrEmpty(txtPesquisa.Text) && int.TryParse(texto, out int id))
                             {
-                                Cliente cliente = CLI.GetById(id);
-                                if (cliente != null)
-                                {
+                                    Cliente cliente = CLI.GetById(int.Parse(texto));
+                                
+                      
                                     ClienteCollection lista = new ClienteCollection();
                                     lista.Add(cliente);
                                     dgvDadosRetornados.DataSource = lista;
-                                }
-                                else
-                                {
-                                    dgvDadosRetornados.DataSource = null; // ID não encontrado
-                                }
+                               
                             }
                             else
                             {
-                                // Se o texto não for um número, não faz nada ou avisa
-                                if (!string.IsNullOrEmpty(texto))
-                                {
-                                    MessageBox.Show("Por favor, digite um ID numérico válido.");
-                                }
+                                
+                                MessageBox.Show("Preencha o campo de pesquisa com um valor numérico válido ");
+                                break;
                             }
                             break;
                         //Nome

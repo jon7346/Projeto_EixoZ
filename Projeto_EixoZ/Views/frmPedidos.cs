@@ -19,7 +19,7 @@ namespace Projeto_EixoZ.Views
             InitializeComponent();
         }
 
-        PedidosController Pedidos = new PedidosController();
+        PedidosController PedidosContr = new PedidosController();
        
         void AtualizarGrid(string texto)
         {
@@ -28,7 +28,7 @@ namespace Projeto_EixoZ.Views
             if (CBSelec.Text == "")
 
             {
-                dgvDadosRetornados.DataSource = Pedidos.GetAll();
+                dgvDadosRetornados.DataSource = PedidosContr.GetAll();
                 MessageBox.Show("Retornando todos os dados! Caso queria, por favor selecione um campo para pesquisa !");
             }
             else
@@ -36,32 +36,47 @@ namespace Projeto_EixoZ.Views
                 {
                     //id
                     case 0:
-                        dgvDadosRetornados.DataSource = Pedidos.GetById(int.Parse(texto.ToString()));
+                        if (!string.IsNullOrEmpty(txtPesquisa.Text) && int.TryParse(texto, out int id))
+                        {
+                            Pedidos pedidos = PedidosContr.GetById(int.Parse(texto));
+
+
+                            PedidosCollection lista = new PedidosCollection();
+                            lista.Add(pedidos);
+                            dgvDadosRetornados.DataSource = lista;
+
+                        }
+                        else
+                        {
+
+                            MessageBox.Show("Preencha o campo de pesquisa com um valor numérico válido ");
+                            break;
+                        }
                         break;
                     // Id da transportadora 
                     case 1:
-                        dgvDadosRetornados.DataSource = Pedidos.GetByIdTransportadora(texto);
+                        dgvDadosRetornados.DataSource = PedidosContr.GetByIdTransportadora(texto);
                         break;
                     //Id do vendedor 
                     case 2:
-                        dgvDadosRetornados.DataSource = Pedidos.GetByIdVendedor(texto);
+                        dgvDadosRetornados.DataSource = PedidosContr.GetByIdVendedor(texto);
                         break;
                     // Endereço de entrega
                     case 3:
                      
-                        dgvDadosRetornados.DataSource = Pedidos.GetByEndereco(texto);
+                        dgvDadosRetornados.DataSource =  PedidosContr.GetByEndereco(texto);
                         break;
                     //  Data do Pedido 
                     case 4:
-                        dgvDadosRetornados.DataSource = Pedidos.GetByData(texto);
+                        dgvDadosRetornados.DataSource = PedidosContr.GetByData(texto);
                         break;
                     // Status do Pedido 
                     case 5:
-                        dgvDadosRetornados.DataSource = Pedidos.GetByStatus(texto);
+                        dgvDadosRetornados.DataSource = PedidosContr.GetByStatus(texto);
                         break;
                     //Observação
                     case 6:
-                        dgvDadosRetornados.DataSource = Pedidos.GetByObeservacao(texto);
+                        dgvDadosRetornados.DataSource = PedidosContr.GetByObeservacao(texto);
                         break;
 
                 }
@@ -72,12 +87,85 @@ namespace Projeto_EixoZ.Views
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
             AtualizarGrid(txtPesquisa.Text);
-        }
 
+        }
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            frmCadPedidos tela = new frmCadPedidos();
-            tela.ShowDialog();
+            // Ação 1 = Cadastrar
+            frmCadPedidos tela = new frmCadPedidos(1, null);
+
+            // 5. CORREÇÃO: Atualizar o grid se o cadastro for salvo
+            if (tela.ShowDialog() == DialogResult.OK)
+            {
+                AtualizarGrid(""); // Recarrega o grid
+            }
+        }
+
+        private Pedidos GetSelecionado()
+        {
+            if (dgvDadosRetornados.CurrentRow == null)
+            {
+                MessageBox.Show("Por favor, selecione um pedido da lista.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return null;
+            }
+
+            // Pega o objeto 'Cliente' inteiro da linha selecionada
+            return (Pedidos)dgvDadosRetornados.CurrentRow.DataBoundItem;
+        }
+
+        private void btnAlterar_Click(object sender, EventArgs e)
+        {
+            // LÓGICA IMPLEMENTADA
+             Pedidos pedido = GetSelecionado();
+            if (pedido == null) return;
+
+            // Ação 2 = Alterar
+            frmCadPedidos tela = new frmCadPedidos(2, pedido);
+
+            if (tela.ShowDialog() == DialogResult.OK)
+            {
+                // Recarrega a pesquisa atual para ver a alteração
+                AtualizarGrid(txtPesquisa.Text);
+            }
+
+        }
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            // LÓGICA IMPLEMENTADA
+            Pedidos pedido = GetSelecionado();
+            if (pedido == null) return;
+
+            // Confirmação
+            if (MessageBox.Show("Tem certeza que deseja excluir o pedido '" + pedido.IdPedido + "'?",
+                                "Confirmação",
+                                MessageBoxButtons.YesNo,
+                                MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                try
+                {
+                     PedidosContr.Excluir(pedido.IdPedido);
+
+                    MessageBox.Show("Pedido excluído com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    // Recarrega a pesquisa
+                    AtualizarGrid(txtPesquisa.Text);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro ao excluir: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void btnViualizar_Click(object sender, EventArgs e)
+        {
+            // LÓGICA IMPLEMENTADA (Botão está escrito "Viualizar" no seu código)
+            Pedidos pedido = GetSelecionado();
+            if (pedido == null) return;
+
+            // Ação 3 = Visualizar
+            frmCadPedidos tela = new frmCadPedidos(3, pedido);
+            tela.ShowDialog(); // Apenas abre para ver, não precisa recarregar grid
         }
     }
 }

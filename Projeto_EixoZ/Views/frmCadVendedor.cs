@@ -31,6 +31,7 @@ namespace Projeto_EixoZ.Views
             {
                 case 1:
                     this.Text = "Cadastrar Vendedor";
+                    txtIDCadVendedor.ReadOnly = true;
                     break;
                 case 2:
                     this.Text = "Editar Vendedor";

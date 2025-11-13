@@ -31,6 +31,7 @@ namespace Projeto_EixoZ.Views
             {
                 case 1:
                     this.Text = "Cadastrar Transportadora"; // Título para cadastro
+                    txtIDCadTransp.ReadOnly = true;
                     break;
                 case 2:
                     this.Text = "Editar Transportadora"; // Título para edição
@@ -59,6 +60,7 @@ namespace Projeto_EixoZ.Views
             // Preenche os campos com os dados do material
             txtIDCadTransp.Text = transportadora.IdTransportadora.ToString();
             txtNomeCadTransp.Text = transportadora.NomeFantasia;
+            txtMeioCadTransp.Text = transportadora.MeioDeTransporte;
             txtPrecoCadTransp.Text = transportadora.PrecoMedio.ToString();
             txtObsCadTransp.Text = transportadora.Observacao;
         }

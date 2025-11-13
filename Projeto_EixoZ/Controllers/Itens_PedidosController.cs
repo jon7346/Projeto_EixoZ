@@ -68,7 +68,7 @@ namespace Projeto_EixoZ.Controllers
             string query =
                 "SELECT * " +
                 "FROM ITENS_PEDIDOS " +
-                "WHERE IdItemPedido = @IdItemPedido" +
+                "WHERE IdItemPedido = @IdItemPedido " +
                 "ORDER BY IdPedido";
             SqlCommand command = new SqlCommand(query);
 

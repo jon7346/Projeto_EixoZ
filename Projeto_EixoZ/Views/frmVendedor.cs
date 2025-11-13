@@ -12,7 +12,7 @@ using Projeto_EixoZ.Controllers;
 
 namespace Projeto_EixoZ.Views
 {
-    public partial class frmVendedor: Form
+    public partial class frmVendedor : Form
     {
         public frmVendedor()
         {
@@ -34,8 +34,24 @@ namespace Projeto_EixoZ.Views
                 {
                     //Id
                     case 0:
-                        dgvDadosRetornados.DataSource = Vendedores.GetById(int.Parse(texto.ToString()));
+                        if (!string.IsNullOrEmpty(txtPesquisa.Text) && int.TryParse(texto, out int id))
+                        {
+                            Vendedor vendedor = Vendedores.GetById(int.Parse(texto));
+
+
+                            VendedorCollection lista = new VendedorCollection();
+                            lista.Add(vendedor);
+                            dgvDadosRetornados.DataSource = lista;
+
+                        }
+                        else
+                        {
+
+                            MessageBox.Show("Preencha o campo de pesquisa com um valor numérico válido ");
+                            break;
+                        }
                         break;
+                       
                     //Nome
                     case 1:
                         dgvDadosRetornados.DataSource = Vendedores.GetByName(texto);
@@ -57,15 +73,88 @@ namespace Projeto_EixoZ.Views
             lblRegistros.Text = "Registros encontrados: " + dgvDadosRetornados.RowCount.ToString();
         }
 
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            // Ação 1 = Cadastrar
+            frmCadVendedor tela = new frmCadVendedor(1, null);
+
+            // 5. CORREÇÃO: Atualizar o grid se o cadastro for salvo
+            if (tela.ShowDialog() == DialogResult.OK)
+            {
+                AtualizarGrid(""); // Recarrega o grid
+            }
+        }
+
+        private Vendedor GetSelecionado()
+        {
+            if (dgvDadosRetornados.CurrentRow == null)
+            {
+                MessageBox.Show("Por favor, selecione um cliente na lista.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return null;
+            }
+
+            // Pega o objeto 'Cliente' inteiro da linha selecionada
+            return (Vendedor)dgvDadosRetornados.CurrentRow.DataBoundItem;
+        }
+
+        private void btnAlterar_Click(object sender, EventArgs e)
+        {
+            // LÓGICA IMPLEMENTADA
+            Vendedor vendedor = GetSelecionado();
+            if (vendedor == null) return;
+
+            // Ação 2 = Alterar
+            frmCadVendedor tela = new frmCadVendedor(2, vendedor);
+
+            if (tela.ShowDialog() == DialogResult.OK)
+            {
+                // Recarrega a pesquisa atual para ver a alteração
+                AtualizarGrid(txtPesquisa.Text);
+            }
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            // LÓGICA IMPLEMENTADA
+            Vendedor vendedor = GetSelecionado();
+            if (vendedor == null) return;
+
+            // Confirmação
+            if (MessageBox.Show("Tem certeza que deseja excluir o cliente '" + vendedor.Nome + "'?",
+                                "Confirmação",
+                                MessageBoxButtons.YesNo,
+                                MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                try
+                {
+                    Vendedores.Excluir(vendedor.IdVendedor);
+
+                    MessageBox.Show("Cliente excluído com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    // Recarrega a pesquisa
+                    AtualizarGrid(txtPesquisa.Text);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro ao excluir: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void btnViualizar_Click(object sender, EventArgs e)
+        {
+            // LÓGICA IMPLEMENTADA (Botão está escrito "Viualizar" no seu código)
+            Vendedor vendedor = GetSelecionado();
+            if (vendedor == null) return;
+
+            // Ação 3 = Visualizar
+            frmCadVendedor tela = new frmCadVendedor(3, vendedor);
+            tela.ShowDialog(); // Apenas abre para ver, não precisa recarregar grid
+        }
+
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
             AtualizarGrid(txtPesquisa.Text);
         }
-
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-            frmVendedor tela = new frmVendedor();           
-            tela.ShowDialog();
-        }
     }
-}
+ }

@@ -81,6 +81,7 @@
             this.btnViualizar.TabIndex = 48;
             this.btnViualizar.Text = "Visualizar";
             this.btnViualizar.UseVisualStyleBackColor = false;
+            this.btnViualizar.Click += new System.EventHandler(this.btnViualizar_Click);
             // 
             // btnExcluir
             // 
@@ -93,6 +94,7 @@
             this.btnExcluir.TabIndex = 47;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = false;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnAlterar
             // 
@@ -105,6 +107,7 @@
             this.btnAlterar.TabIndex = 46;
             this.btnAlterar.Text = "Alterar";
             this.btnAlterar.UseVisualStyleBackColor = false;
+            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
             // btnAdd
             // 

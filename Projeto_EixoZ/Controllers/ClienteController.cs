@@ -87,7 +87,7 @@ namespace Projeto_EixoZ.Controllers
             string query =
                 "SELECT * " +
                 "FROM CLIENTE " +
-                "WHERE IdCliente = @IdCliente" +
+                "WHERE IdCliente = @IdCliente " +
                 "ORDER BY Nome";
             SqlCommand command = new SqlCommand(query);
             //Definindo os valores dos parametros
@@ -190,7 +190,7 @@ namespace Projeto_EixoZ.Controllers
         
             public ClienteCollection GetByIdade(string value)
         {
-            return GetByFilter("Idade = " + value);
+            return GetByFilter("Idade = " + value  );
         }
 
     }  

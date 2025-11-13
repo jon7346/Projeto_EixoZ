@@ -82,7 +82,7 @@ namespace Projeto_EixoZ.Controllers
             string query =
                 "SELECT * " +
                 "FROM TRANSPORTADORA " +
-                "WHERE IdTransportadora = @IdTransportadora" +
+                "WHERE IdTransportadora = @IdTransportadora " +
                 "ORDER BY NomeFantasia";
             SqlCommand command = new SqlCommand(query);
             //Definindo os valores dos parametros
@@ -99,7 +99,7 @@ namespace Projeto_EixoZ.Controllers
                 //e atribuir ao objeto
                 //Todo dado precisa ser convertido
                 //do SQL Server para C#
-                transportadora.IdTransportadora = (int)dataTable.Rows[0]["IdTranportadora"];
+                transportadora.IdTransportadora = (int)dataTable.Rows[0]["IdTransportadora"];
                 transportadora.NomeFantasia = (string)dataTable.Rows[0]["NomeFantasia"];
                 transportadora.MeioDeTransporte = (string)dataTable.Rows[0]["MeioDeTransporte"];
                 transportadora.PrecoMedio = (decimal)dataTable.Rows[0]["PrecoMedio"];
@@ -113,6 +113,7 @@ namespace Projeto_EixoZ.Controllers
         }
 
         //Método publico que retorna uma coleção de Clientes com filtro
+        //Adicionado opção de filtro apenas para não ter q repetir código
         //Adicionado opção de filtro apenas para não ter q repetir código
         public TransportadoraCollection GetByFilter(string filtro = "")
         {
@@ -128,7 +129,7 @@ namespace Projeto_EixoZ.Controllers
 
             SqlCommand command = new SqlCommand(query);
 
-            command.Parameters.AddWithValue("@filtro", filtro);
+            
             //Executando o comando SQL e armazenando o resultado
             //em um objeto do tipo DataTable
             DataTable dataTable = dataBase.GetDataTable(command);
@@ -143,7 +144,7 @@ namespace Projeto_EixoZ.Controllers
                 //e atribuir ao objeto
                 //Todo dado precisa ser convertido
                 //do SQL Server para C#
-                transportadora.IdTransportadora = (int)row["IdTranportadora"];
+                transportadora.IdTransportadora = (int)row["IdTransportadora"];
                 transportadora.NomeFantasia = (string)row["NomeFantasia"];
                 transportadora.MeioDeTransporte = (string)row["MeioDeTransporte"];
                 transportadora.PrecoMedio = (decimal)row["PrecoMedio"];
@@ -165,7 +166,7 @@ namespace Projeto_EixoZ.Controllers
         //Onde é preciso definir o campo e o valor do filtro
         public TransportadoraCollection GetByName(string value)
         {
-            return GetByFilter("NomeFantasia LIKE '%" + value + "%'");
+            return GetByFilter("NomeFantasia like '%" + value  + "%'" );
         }
         /* 
 
@@ -176,15 +177,15 @@ namespace Projeto_EixoZ.Controllers
         */
         public TransportadoraCollection GetByMeioTransporte(string value)
         {
-            return GetByFilter("MeioDeTransporte LIKE '%" + value + "%'");
+            return GetByFilter("MeioDeTransporte like '%" + value + "%'");
         }
         public TransportadoraCollection GetByPrecoMedio(string value)
         {
-            return GetByFilter("PrecoMedio LIKE '%" + value + "%'");
+            return GetByFilter("PrecoMedio like '%" + value + "%'");
         }
         public TransportadoraCollection GetByObservacao(string value)
         {
-            return GetByFilter("Observacao LIKE '%" + value + "%'");
+            return GetByFilter("Observacao like '%" + value + "%'");
         }
     }
 }
