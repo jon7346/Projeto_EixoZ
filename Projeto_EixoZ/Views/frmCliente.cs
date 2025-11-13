@@ -185,5 +185,10 @@ namespace Projeto_EixoZ.Views
         {
             AtualizarGrid(txtPesquisa.Text);
         }
+
+        private void frmCliente_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

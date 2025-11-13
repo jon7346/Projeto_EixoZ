@@ -64,7 +64,7 @@ namespace Projeto_EixoZ.Views
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            frmCadMaterial tela = new frmCadMaterial();           
+            frmVendedor tela = new frmVendedor();           
             tela.ShowDialog();
         }
     }

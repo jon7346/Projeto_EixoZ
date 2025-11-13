@@ -53,3 +53,12 @@ C:\GitHub\C#\Projeto_EixoZ\Projeto_EixoZ\obj\Debug\Projeto_EixoZ.csproj.Generate
 C:\GitHub\C#\Projeto_EixoZ\Projeto_EixoZ\obj\Debug\Projeto_EixoZ.csproj.CoreCompileInputs.cache
 C:\GitHub\C#\Projeto_EixoZ\Projeto_EixoZ\obj\Debug\Projeto_EixoZ.exe
 C:\GitHub\C#\Projeto_EixoZ\Projeto_EixoZ\obj\Debug\Projeto_EixoZ.pdb
+C:\RepositórioGitHub\Projeto_EixoZ\Projeto_EixoZ\bin\Debug\Projeto_EixoZ.exe.config
+C:\RepositórioGitHub\Projeto_EixoZ\Projeto_EixoZ\bin\Debug\Projeto_EixoZ.exe
+C:\RepositórioGitHub\Projeto_EixoZ\Projeto_EixoZ\bin\Debug\Projeto_EixoZ.pdb
+C:\RepositórioGitHub\Projeto_EixoZ\Projeto_EixoZ\obj\Debug\Projeto_EixoZ.Views.frmCliente.resources
+C:\RepositórioGitHub\Projeto_EixoZ\Projeto_EixoZ\obj\Debug\Projeto_EixoZ.Views.frmPedidos.resources
+C:\RepositórioGitHub\Projeto_EixoZ\Projeto_EixoZ\obj\Debug\Projeto_EixoZ.Views.FrmTransportadora.resources
+C:\RepositórioGitHub\Projeto_EixoZ\Projeto_EixoZ\obj\Debug\Projeto_EixoZ.Views.frmVendedor.resources
+C:\RepositórioGitHub\Projeto_EixoZ\Projeto_EixoZ\obj\Debug\Projeto_EixoZ.exe
+C:\RepositórioGitHub\Projeto_EixoZ\Projeto_EixoZ\obj\Debug\Projeto_EixoZ.pdb

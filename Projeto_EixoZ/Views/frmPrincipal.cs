@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Projeto_EixoZ.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,28 +18,34 @@ namespace Projeto_EixoZ.Views
             InitializeComponent();
         }
 
-        private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
+
+        private void vendedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmVendedor tela = new frmVendedor();
+            tela.ShowDialog();
+        }
+
+        private void clienteToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             frmCliente telaCLI = new frmCliente();
             telaCLI.ShowDialog();
         }
 
-        private void pedidosToolStripMenuItem_Click(object sender, EventArgs e)
+        private void pedidosToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             frmPedidos tela = new frmPedidos();
             tela.ShowDialog();
         }
 
-        private void pedidosToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void transportadoraToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmMaterial tela = new frmMaterial();
+            FrmTransportadora tela = new FrmTransportadora();
             tela.ShowDialog();
-
         }
 
-        private void tranportadorasToolStripMenuItem_Click(object sender, EventArgs e)
+        private void materialToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmTransportadora tela = new FrmTransportadora() ;
+            frmMaterial tela = new frmMaterial();
             tela.ShowDialog();
         }
     }
