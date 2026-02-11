@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\jonat\\source\\repos\\jon7346\\Projeto_EixoZ\\Projeto_EixoZ\\Projeto_EixoZ\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|c:\\users\\jonat\\source\\repos\\jon7346\\projeto_eixoz\\projeto_eixoz\\projeto_eixoz\\views\\frmpedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|c:\\users\\jonat\\source\\repos\\jon7346\\projeto_eixoz\\projeto_eixoz\\projeto_eixoz\\views\\frmcadastrocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|solutionrelative:views\\frmcadastrocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|C:\\Users\\jonat\\source\\repos\\jon7346\\Projeto_EixoZ\\Projeto_EixoZ\\Projeto_EixoZ\\views\\frmcadastrocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|solutionrelative:views\\frmcadastrocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|C:\\Users\\jonat\\source\\repos\\jon7346\\Projeto_EixoZ\\Projeto_EixoZ\\Projeto_EixoZ\\views\\frmcadtransportadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|solutionrelative:views\\frmcadtransportadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|C:\\Users\\jonat\\source\\repos\\jon7346\\Projeto_EixoZ\\Projeto_EixoZ\\Projeto_EixoZ\\views\\frmpedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|solutionrelative:views\\frmpedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|c:\\users\\jonat\\source\\repos\\jon7346\\projeto_eixoz\\projeto_eixoz\\projeto_eixoz\\views\\frmmaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|solutionrelative:views\\frmmaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|c:\\users\\jonat\\source\\repos\\jon7346\\projeto_eixoz\\projeto_eixoz\\projeto_eixoz\\views\\frmcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|solutionrelative:views\\frmcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|c:\\users\\jonat\\source\\repos\\jon7346\\projeto_eixoz\\projeto_eixoz\\projeto_eixoz\\views\\frmmaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|solutionrelative:views\\frmmaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|c:\\users\\jonat\\source\\repos\\jon7346\\projeto_eixoz\\projeto_eixoz\\projeto_eixoz\\views\\frmcadpedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|solutionrelative:views\\frmcadpedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|c:\\users\\jonat\\source\\repos\\jon7346\\projeto_eixoz\\projeto_eixoz\\projeto_eixoz\\views\\frmpedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|C:\\Users\\jonat\\source\\repos\\jon7346\\Projeto_EixoZ\\Projeto_EixoZ\\Projeto_EixoZ\\views\\frmpedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|solutionrelative:views\\frmpedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|C:\\Users\\jonat\\source\\repos\\jon7346\\Projeto_EixoZ\\Projeto_EixoZ\\Projeto_EixoZ\\views\\frmmaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5B54B92-20CE-4694-9E03-E2F03437FF20}|Projeto_EixoZ.csproj|solutionrelative:views\\frmmaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 24,
           "Children": [
             {
               "$type": "Bookmark",
@@ -61,80 +61,147 @@
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "frmCadPedidos.cs",
-              "DocumentMoniker": "C:\\Users\\jonat\\source\\repos\\jon7346\\Projeto_EixoZ\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmCadPedidos.cs",
-              "RelativeDocumentMoniker": "Views\\frmCadPedidos.cs",
-              "ToolTip": "C:\\Users\\jonat\\source\\repos\\jon7346\\Projeto_EixoZ\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmCadPedidos.cs",
-              "RelativeToolTip": "Views\\frmCadPedidos.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAkwFkAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T14:37:43.152Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:139:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:140:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:141:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:142:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:143:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmMaterial.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\jonat\\source\\repos\\jon7346\\Projeto_EixoZ\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmMaterial.cs",
-              "RelativeDocumentMoniker": "Views\\frmMaterial.cs",
-              "ToolTip": "C:\\Users\\jonat\\source\\repos\\jon7346\\Projeto_EixoZ\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmMaterial.cs [Design]",
-              "RelativeToolTip": "Views\\frmMaterial.cs [Design]",
+              "DocumentIndex": 0,
+              "Title": "frmCadastroCliente.cs",
+              "DocumentMoniker": "C:\\Users\\jonat\\source\\repos\\jon7346\\Projeto_EixoZ\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmCadastroCliente.cs",
+              "RelativeDocumentMoniker": "Views\\frmCadastroCliente.cs",
+              "ToolTip": "C:\\Users\\jonat\\source\\repos\\jon7346\\Projeto_EixoZ\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmCadastroCliente.cs",
+              "RelativeToolTip": "Views\\frmCadastroCliente.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAowIkAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T14:35:06.385Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmCliente.cs",
-              "DocumentMoniker": "C:\\Users\\jonat\\source\\repos\\jon7346\\Projeto_EixoZ\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmCliente.cs",
-              "RelativeDocumentMoniker": "Views\\frmCliente.cs",
-              "ToolTip": "C:\\Users\\jonat\\source\\repos\\jon7346\\Projeto_EixoZ\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmCliente.cs",
-              "RelativeToolTip": "Views\\frmCliente.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAgwEEAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T14:30:57.029Z",
+              "WhenOpened": "2026-01-06T20:53:43.694Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "frmCadastroCliente.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\jonat\\source\\repos\\jon7346\\Projeto_EixoZ\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmCadastroCliente.cs",
+              "RelativeDocumentMoniker": "Views\\frmCadastroCliente.cs",
+              "ToolTip": "C:\\Users\\jonat\\source\\repos\\jon7346\\Projeto_EixoZ\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmCadastroCliente.cs [Design]",
+              "RelativeToolTip": "Views\\frmCadastroCliente.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T20:53:05.308Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmCadTransportadora.cs",
+              "DocumentMoniker": "C:\\Users\\jonat\\source\\repos\\jon7346\\Projeto_EixoZ\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmCadTransportadora.cs",
+              "RelativeDocumentMoniker": "Views\\frmCadTransportadora.cs",
+              "ToolTip": "C:\\Users\\jonat\\source\\repos\\jon7346\\Projeto_EixoZ\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmCadTransportadora.cs",
+              "RelativeToolTip": "Views\\frmCadTransportadora.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T19:54:00.844Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "frmMaterial.cs",
               "DocumentMoniker": "C:\\Users\\jonat\\source\\repos\\jon7346\\Projeto_EixoZ\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmMaterial.cs",
               "RelativeDocumentMoniker": "Views\\frmMaterial.cs",
               "ToolTip": "C:\\Users\\jonat\\source\\repos\\jon7346\\Projeto_EixoZ\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmMaterial.cs",
               "RelativeToolTip": "Views\\frmMaterial.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAqwBcAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAA8wBcAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T14:22:39.704Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-13T14:22:39.704Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "frmPedidos.cs",
               "DocumentMoniker": "C:\\Users\\jonat\\source\\repos\\jon7346\\Projeto_EixoZ\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmPedidos.cs",
               "RelativeDocumentMoniker": "Views\\frmPedidos.cs",
               "ToolTip": "C:\\Users\\jonat\\source\\repos\\jon7346\\Projeto_EixoZ\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmPedidos.cs",
               "RelativeToolTip": "Views\\frmPedidos.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAAwGIAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAADcAAAAAAAAAAAAAwFkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T14:22:15.11Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-13T14:22:15.11Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "frmPedidos.cs [Design]",
               "DocumentMoniker": "C:\\Users\\jonat\\source\\repos\\jon7346\\Projeto_EixoZ\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmPedidos.cs",
               "RelativeDocumentMoniker": "Views\\frmPedidos.cs",
               "ToolTip": "C:\\Users\\jonat\\source\\repos\\jon7346\\Projeto_EixoZ\\Projeto_EixoZ\\Projeto_EixoZ\\Views\\frmPedidos.cs [Design]",
               "RelativeToolTip": "Views\\frmPedidos.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T14:22:06.376Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-11-13T14:22:06.376Z"
             }
           ]
         }
